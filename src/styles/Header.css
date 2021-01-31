@@ -1,0 +1,19 @@
+h1 {
+  position: absolute;
+  width: 843px;
+  height: 228px;
+  left: 50vh;
+  top: 336px;
+  color: white;
+
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 75px;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+.greg {
+  color: #f1d302;
+}
