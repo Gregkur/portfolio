@@ -1,0 +1,31 @@
+/* SKILLS */
+.skillsTitle {
+  position: absolute;
+  width: 358px;
+  top: 49px;
+  border-bottom: 1px solid #f1d302;
+
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 75px;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: #0e1c36;
+}
+.skills {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100vw;
+  height: 500px;
+  top: 115rem;
+}
+.skillsRectangle {
+  margin-top: 15rem;
+  height: 303px;
+  width: 100%;
+  background: #0e1c36;
+}
