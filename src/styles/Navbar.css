@@ -12,7 +12,7 @@
   display: flex;
   margin-right: 15rem;
 }
-p {
+.menuItem {
   margin-right: 2rem;
   font-family: Raleway;
   font-style: normal;
@@ -25,6 +25,6 @@ p {
   transition: 0.3s;
   cursor: pointer;
 }
-p:hover {
+.menuItem:hover {
   color: #f1d302;
 }

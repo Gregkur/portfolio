@@ -1,0 +1,85 @@
+/* Frame 29 */
+.about {
+  position: absolute;
+  width: 1441px;
+  height: 854px;
+  left: 10vw;
+  top: 70rem;
+}
+
+/* ABOUT */
+.aboutTitle {
+  position: absolute;
+  width: 358px;
+  left: 541px;
+  top: 49px;
+  border-bottom: 1px solid #f1d302;
+
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 75px;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: #0e1c36;
+}
+
+/* SKILLS */
+
+/* position: absolute;
+width: 222px;
+height: 97px;
+left: 609px;
+top: 757px;
+
+font-family: Raleway;
+font-style: normal;
+font-weight: 500;
+font-size: 64px;
+line-height: 75px;
+text-align: center;
+letter-spacing: 0.02em;
+
+color: #0e1c36; */
+
+/* Frame 2 */
+
+/* Auto Layout */
+.aboutContainer {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  width: 100%;
+  top: 16rem;
+}
+
+/* Originally from Poland, but found home in Germany. Coffee geek with over 7 years in the specialty coffee industry, 2020 changed him into a web developer, no regrets! */
+.aboutText {
+  position: static;
+  width: 716px;
+  height: 388px;
+  left: 0px;
+  top: 0px;
+
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: #000000;
+}
+.profilePhoto {
+  position: static;
+  width: 420px;
+  height: 420px;
+  left: 821px;
+  top: 0px;
+  border-radius: 578.5px;
+}
