@@ -4,16 +4,27 @@
   background: #7d8491;
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
+  border-bottom: 3px solid #f1d302;
+  margin-top: -4px;
 }
-.li {
+.menuContainer {
+  display: flex;
+  margin-right: 15rem;
+}
+p {
+  margin-right: 2rem;
   font-family: Raleway;
   font-style: normal;
   font-weight: 500;
   font-size: 27px;
   line-height: 32px;
-  /* identical to box height */
   text-align: center;
   letter-spacing: 0.02em;
   color: white;
+  transition: 0.3s;
+  cursor: pointer;
+}
+p:hover {
+  color: #f1d302;
 }
