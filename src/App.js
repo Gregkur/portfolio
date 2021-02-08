@@ -5,12 +5,12 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 function App() {
   return (
-    <div className="container">
+    <>
       <Header />
-      {/* <Navbar />
+      <Navbar />
       <About />
-      <Skills /> */}
-    </div>
+      {/* <Skills /> */}
+    </>
   );
 }
 

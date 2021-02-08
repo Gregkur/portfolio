@@ -3,22 +3,24 @@
   align-items: center;
   justify-content: center;
 }
+
 .textContainer {
   position: absolute;
   max-width: 707px;
-  height: 228px;
 }
+
+.greg {
+  color: #f1d302;
+}
+
 h1 {
   color: white;
 
   font-family: Raleway;
   font-style: normal;
   font-weight: 500;
-  font-size: 64px;
+  font-size: 56px;
   line-height: 75px;
   text-align: center;
   letter-spacing: 0.02em;
-}
-.greg {
-  color: #f1d302;
 }
