@@ -1,13 +1,12 @@
-/* SKILLS */
-.skills {
+.contact {
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
-  background: transparent;
-  height: 707px;
+  height: 907px;
+  border-bottom: 2px solid #f1d302;
 }
-.skillsTitle {
+
+.contactTitle {
   width: 358px;
   border-bottom: 1px solid #f1d302;
 
@@ -20,10 +19,4 @@
   letter-spacing: 0.02em;
 
   color: white;
-}
-.skillsRectangle {
-  height: 303px;
-  width: 100%;
-  /* background: #0e1c36; */
-  background: transparent;
 }

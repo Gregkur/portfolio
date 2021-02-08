@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 import Particles from "react-particles-js";
 import { particleParams } from "./particles";
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <About />
       <Skills />
       <Projects />
+      <Contact />
     </>
   );
 }
