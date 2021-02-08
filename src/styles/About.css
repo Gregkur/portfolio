@@ -1,13 +1,15 @@
 .about {
   /* position: absolute; */
   /* width: 1441px; */
-  /* height: 854px; */
+  height: 707px;
   /* left: 10vw; */
   /* top: 70rem; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: white;
+  border-bottom: 2px solid #f1d302;
 }
 
 .aboutTitle {

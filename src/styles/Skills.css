@@ -4,6 +4,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background: transparent;
+  height: 707px;
 }
 .skillsTitle {
   width: 358px;
@@ -17,10 +19,11 @@
   text-align: center;
   letter-spacing: 0.02em;
 
-  color: #0e1c36;
+  color: white;
 }
 .skillsRectangle {
   height: 303px;
   width: 100%;
-  background: #0e1c36;
+  /* background: #0e1c36; */
+  background: transparent;
 }

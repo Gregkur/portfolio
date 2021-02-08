@@ -7,3 +7,7 @@ body {
 #root {
   position: relative;
 }
+.particlesBackground{
+  position: absolute;
+  z-index: -1;
+}

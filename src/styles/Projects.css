@@ -1,0 +1,36 @@
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: white;
+  height: 907px;
+  border-bottom: 2px solid #f1d302;
+  border-top: 2px solid #f1d302;
+}
+
+.projectsTitle {
+  width: 358px;
+  border-bottom: 1px solid #f1d302;
+
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 75px;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: #0e1c36;
+}
+.grid-container {
+  height: 707px;
+  width: 65%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". ."
+    ". .";
+}
