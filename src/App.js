@@ -9,7 +9,7 @@ function App() {
       <Header />
       <Navbar />
       <About />
-      {/* <Skills /> */}
+      <Skills />
     </>
   );
 }
