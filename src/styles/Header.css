@@ -1,9 +1,14 @@
-h1 {
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.textContainer {
   position: absolute;
-  width: 843px;
+  max-width: 707px;
   height: 228px;
-  left: 50vh;
-  top: 336px;
+}
+h1 {
   color: white;
 
   font-family: Raleway;
