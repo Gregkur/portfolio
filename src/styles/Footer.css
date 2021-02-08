@@ -1,0 +1,11 @@
+.mainFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 200px;
+  background: white;
+  border-top: 2px solid #f1d302;
+}
+.mainFooter > svg {
+  font-size: 55px;
+}

@@ -2,8 +2,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 907px;
-  border-bottom: 2px solid #f1d302;
+  height: 499px;
 }
 
 .contactTitle {
