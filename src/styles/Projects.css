@@ -10,17 +10,10 @@
 }
 
 .projectsTitle {
-  width: 358px;
+  width: 250px;
   border-bottom: 1px solid #f1d302;
-
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 64px;
-  line-height: 75px;
-  text-align: center;
-  letter-spacing: 0.02em;
-
+  font-size: 46px;
+  line-height: 52px;
   color: #0e1c36;
 }
 .grid-container {
