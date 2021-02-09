@@ -4,24 +4,23 @@
   align-items: center;
   flex-direction: column;
   background: white;
-  height: 907px;
+  height: 100vh;
   border-bottom: 2px solid #f1d302;
-  border-top: 2px solid #f1d302;
 }
 
 .projectsTitle {
   width: 250px;
   border-bottom: 1px solid #f1d302;
-  font-size: 46px;
+  font-size: 36px;
   line-height: 52px;
   color: #0e1c36;
 }
 .grid-container {
-  height: 707px;
-  width: 65%;
+  height: 25rem;
+  width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
   gap: 0px 0px;
   grid-template-areas:
     ". ."

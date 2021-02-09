@@ -1,7 +1,7 @@
 .about {
   /* position: absolute; */
   /* width: 1441px; */
-  height: 707px;
+  height: 100vh;
   /* left: 10vw; */
   /* top: 70rem; */
   display: flex;
@@ -9,15 +9,15 @@
   align-items: center;
   /* justify-content: center; */
   background-color: white;
-  border-bottom: 2px solid #f1d302;
 }
 
 .aboutTitle {
   width: 250px;
   border-bottom: 1px solid #f1d302;
-  font-size: 46px;
-  line-height: 52px;
+  font-size: 36px;
+  line-height: 39px;
   color: #0e1c36;
+  letter-spacing: 0.001em;
 }
 
 .aboutContainer {

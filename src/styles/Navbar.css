@@ -1,12 +1,43 @@
 .nav {
+  position: sticky;
   width: 100vw;
-  height: 50px;
+  height: 40px;
   background: #081122;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   border-bottom: 3px solid #f1d302;
+  transition: 0.3s;
 }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  animation-name: slide;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  transform: translate(0, -20px);
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+@keyframes slide {
+  0% {
+    transform: translate(0, -20px);
+    opacity: 0.1;
+    top: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
 .menuContainer {
   display: flex;
   margin-right: 15rem;
