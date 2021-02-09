@@ -8,6 +8,7 @@
   background: rgb(245, 245, 245);
 }
 .skillsTitle {
+  margin-top: 3rem;
   width: 250px;
   border-bottom: 1px solid #f1d302;
   font-size: 36px;

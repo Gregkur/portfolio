@@ -1,6 +1,6 @@
 import { React, Component } from "react";
+import { Link } from "react-scroll";
 import "../styles/Navbar.css";
-// import { stickyNavbar } from "../scripts/stickyNavbar";
 
 export default class Navbar extends Component {
   // TODO MOVE IT TO A HOOK
@@ -26,9 +26,24 @@ export default class Navbar extends Component {
   };
 
   render() {
-    const navbarItems = ["Home", "About", "Skills", "Projecs", "Contact", "CV"];
+    const navbarItems = [
+      "Home",
+      "About",
+      "Skills",
+      "Projects",
+      "Contact",
+      "CV",
+    ];
     const mappedNavbarItems = navbarItems.map((item) => (
-      <p className="menuItem">{item}</p>
+      <Link
+        className="menuItem"
+        activeClass="active"
+        to={item.toLocaleLowerCase()}
+        spy={true}
+        smooth={true}
+        duration={500}>
+        {item}
+      </Link>
     ));
     return (
       <div className={`nav ${this.state.nav && "sticky"}`}>

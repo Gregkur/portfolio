@@ -54,3 +54,6 @@
 .menuItem:hover {
   color: #f1d302;
 }
+.active{
+  color: #f1d302;
+}
