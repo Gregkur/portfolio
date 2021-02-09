@@ -3,6 +3,7 @@ import "../styles/Navbar.css";
 // import { stickyNavbar } from "../scripts/stickyNavbar";
 
 export default class Navbar extends Component {
+  // TODO MOVE IT TO A HOOK
   state = {
     nav: false,
   };
@@ -11,9 +12,7 @@ export default class Navbar extends Component {
     const navbar = document.querySelector(".nav");
     this.navbarOffset = navbar.offsetTop;
   }
-  componentWillUnmount() {
-    window.removeEventListener("scroll");
-  }
+
   handleScroll = () => {
     if (window.pageYOffset > this.navbarOffset) {
       if (!this.state.nav) {
