@@ -7,13 +7,8 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Particles from "react-particles-js";
 import { particleParams } from "./particles";
-import { useEffect } from "react";
-import { stickyNavbar } from "./scripts/stickyNavbar";
+
 function App() {
-  // useEffect(() => {
-  //   console.log(1)
-  //   console.log(stickyNavbar())
-  // })
 
   return (
     <>
