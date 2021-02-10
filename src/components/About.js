@@ -4,16 +4,17 @@ import { faPalette } from "@fortawesome/free-solid-svg-icons";
 import { faPeopleCarry } from "@fortawesome/free-solid-svg-icons";
 import { faBookReader } from "@fortawesome/free-solid-svg-icons";
 import Fade from "react-reveal/Fade";
+import Flip from "react-reveal/Flip";
 import "../styles/About.css";
 
 export default function About() {
   return (
     <div name="content" className="about content">
-      <Fade left big duration={1500}>
+      <Fade left duration={1200} delay={200}>
         <h1 className="aboutTitle">ABOUT</h1>
       </Fade>
       <div className="iconContainer">
-        <Fade top cascade duration={1500} fraction={0.8}>
+        <Flip left duration={1200} fraction={0.8} delay={300}>
           <div className="iconText">
             <FontAwesomeIcon className="icon Palette" icon={faPalette} />
             <h4>Creative mind</h4>
@@ -22,8 +23,8 @@ export default function About() {
               eiusmod
             </p>
           </div>
-          {/* </Fade> */}
-          {/* <Fade top> */}
+        </Flip>
+        <Flip left duration={1200} fraction={0.8} delay={450}>
           <div className="iconText">
             <FontAwesomeIcon className="icon People" icon={faPeopleCarry} />
             <h4>Team worker</h4>
@@ -32,9 +33,9 @@ export default function About() {
               eiusmod
             </p>
           </div>
-          {/* </Fade> */}
+        </Flip>
 
-          {/* <Fade top> */}
+        <Flip left duration={1200} fraction={0.8} delay={550}>
           <div className="iconText">
             <FontAwesomeIcon className="icon Book" icon={faBookReader} />
             <h4>Rapid learner</h4>
@@ -43,10 +44,10 @@ export default function About() {
               eiusmod
             </p>
           </div>
-        </Fade>
+        </Flip>
       </div>
       <div className="aboutContainer">
-        <Fade left big duration={1500} fraction={0.8}>
+        <Fade left duration={1200} fraction={0.8}>
           <p className="aboutText">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
             justo orci, sollicitudin iaculis dignissim at, lacinia vel tellus.
@@ -54,11 +55,10 @@ export default function About() {
             ullamcorper mauris. Pellentesque eu scelerisque libero. Nunc ac
             lectus hendrerit, vehicula ipsum ac, tristique est. Phasellus tempor
             enim fringilla convallis hendrerit. Cras lorem leo, pretium in
-            fermentum ac, ullamcorper eget ipsum. Quisque at maximus est,
-            sollicitudin malesuada ex.
+            fermentum ac, ullamcorper eget ipsum.
           </p>
         </Fade>
-        <Fade right big duration={1500} fraction={0.6}>
+        <Fade right duration={1200} fraction={0.6}>
           <img
             className="profilePhoto"
             src="images/profile.jpg"

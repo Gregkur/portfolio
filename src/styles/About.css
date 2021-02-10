@@ -29,9 +29,9 @@
 }
 
 .aboutText {
-  width: 36rem;
+  width: 50%;
   font-family: Raleway;
-  font-weight: 500;
+  font-weight: 300;
   font-size: 20px;
   line-height: 28px;
   display: flex;
@@ -44,6 +44,9 @@
   width: 240px;
   height: 240px;
   border-radius: 578.5px;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
 }
 
 /* Icons */
@@ -75,8 +78,9 @@
   color: #000000a6;
 }
 .iconText > p {
+  font-size: small;
   margin-top: -30px;
   font-weight: 100;
-  max-width: 94%;
+  max-width: 92%;
   text-align: center;
 }
