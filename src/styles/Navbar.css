@@ -15,7 +15,7 @@
   top: 0;
   width: 100%;
   animation-name: slide;
-  animation-duration: 1s;
+  animation-duration: 0.9s;
   animation-timing-function: ease;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -28,7 +28,7 @@
 
 @keyframes slide {
   0% {
-    transform: translate(0, -55px);
+    transform: translate(0, -60px);
     /* opacity: 0.1; */
     top: 0;
   }
@@ -54,6 +54,6 @@
 .menuItem:hover {
   color: #f1d302;
 }
-.active{
+.active {
   color: #f1d302;
 }
