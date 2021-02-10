@@ -14,15 +14,12 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    console.log("useEffect");
     const body = document.querySelector("body");
     body.classList.add("noScroll");
     setTimeout(() => {
-      console.log("timeout");
-
       body.classList.remove("noScroll");
       setLoading(false);
-    }, 2000);
+    }, 2600);
   }, []);
 
   return (
