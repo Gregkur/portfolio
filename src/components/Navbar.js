@@ -41,7 +41,8 @@ export default class Navbar extends Component {
         to={item.toLocaleLowerCase()}
         spy={true}
         smooth={true}
-        duration={500}>
+        duration={500}
+        offset={-40}>
         {item}
       </Link>
     ));
