@@ -8,6 +8,7 @@
   justify-content: flex-end;
   border-bottom: 3px solid #f1d302;
   transition: 0.3s;
+  z-index: 50;
 }
 
 .sticky {
