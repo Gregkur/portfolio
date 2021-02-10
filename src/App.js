@@ -1,3 +1,4 @@
+import { React, useState, useEffect } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
@@ -10,9 +11,23 @@ import Particles from "react-particles-js";
 import { particleParams } from "./particles";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    console.log("useEffect");
+    const body = document.querySelector("body");
+    body.classList.add("noScroll");
+    setTimeout(() => {
+      console.log("timeout");
+
+      body.classList.remove("noScroll");
+      setLoading(false);
+    }, 2000);
+  }, []);
+
   return (
     <>
-      <Loader />
+      {loading && <Loader />}
       <Particles
         className="particlesBackground"
         width="100vw"
