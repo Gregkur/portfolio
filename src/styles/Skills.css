@@ -1,7 +1,6 @@
 /* SKILLS */
 .skills {
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
   height: 100vh;
@@ -17,8 +16,42 @@
   letter-spacing: 0.001em;
 }
 .skillsRectangle {
-  height: 303px;
-  width: 100%;
+  margin-top: 17rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50%;
   /* background: #0e1c36; */
   background: transparent;
+}
+.singleSkill {
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  color: white;
+  background: #f1d302;
+  border-radius: 20% */
+  display: inline-block;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  padding-top: 0.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  background-color: #f1d302;
+  color: white;
+  border-radius: 50rem;
+}
+.skillsGrid {
+  width: 65%;
+  height: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px 20px;
+  grid-template-areas:
+    ". . . ."
+    ". . . .";
 }
