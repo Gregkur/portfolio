@@ -165,7 +165,7 @@
 .grow70 {
   animation-name: grow70;
   animation-duration: 3s;
-  animation-delay: 3s;
+  animation-delay: 3.2s;
   animation-fill-mode: forwards;
 }
 @keyframes grow70 {
@@ -179,7 +179,7 @@
 .grow60 {
   animation-name: grow60;
   animation-duration: 3s;
-  animation-delay: 3s;
+  animation-delay: 3.4s;
   animation-fill-mode: forwards;
 }
 @keyframes grow60 {
@@ -193,7 +193,7 @@
 .grow30 {
   animation-name: grow30;
   animation-duration: 3s;
-  animation-delay: 3s;
+  animation-delay: 3.1s;
   animation-fill-mode: forwards;
 }
 @keyframes grow30 {
@@ -207,7 +207,7 @@
 .grow40 {
   animation-name: grow40;
   animation-duration: 3s;
-  animation-delay: 3s;
+  animation-delay: 3.2s;
   animation-fill-mode: forwards;
 }
 @keyframes grow40 {
