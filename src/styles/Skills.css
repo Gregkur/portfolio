@@ -93,11 +93,19 @@
 }
 
 .skill {
+  position: relative;
   align-items: center;
   display: flex;
   justify-items: center;
   width: 100%;
   background: #e0e0e0;
+}
+.skill > p {
+  position: absolute;
+  right: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #0e1c368f;
 }
 .skill > h5 {
   background: #f1d302;
@@ -139,6 +147,7 @@
   box-shadow: 0 10px 6px -6px #777;
 }
 
+/* Animations */
 .grow90 {
   animation-name: grow90;
   animation-duration: 3s;
