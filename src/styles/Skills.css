@@ -84,8 +84,9 @@
 }
 
 .skillsContainer {
+  justify-content: space-evenly;
   position: relative;
-  height: 80%;
+  height: 55%;
   width: 47%;
   align-items: center;
   display: flex;
@@ -114,68 +115,126 @@
   box-shadow: 0 10px 6px -6px #777; */
 }
 
-.react {
-  top: 1rem;
-  left: 5rem;
-}
-.js {
-  bottom: 2rem;
-  left: 10rem;
-}
-.xhtml {
-  right: 43rem;
-  top: 2rem;
-}
-.css {
-  right: 48rem;
-  bottom: 3rem;
-}
-.ruby {
-  top: 3rem;
-  left: 26rem;
-}
-.rails {
-  bottom: 12rem;
-  left: 70rem;
-}
-.postreSQL {
-  top: 6rem;
-  right: 7rem;
-}
-.figma {
-  bottom: 2rem;
-  left: 55rem;
-}
 
 .skill {
   align-items: center;
   display: flex;
   justify-items: center;
   width: 100%;
+  background: #e0e0e0;
 }
 .skill > h5 {
-  text-align: center;
-  background: yellow;
-  padding: 7px;
+  background: #f1d302;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  width: 7rem;
+  margin: 0px;
+  /* padding: 10px 10px 10px 10px; */
+  /* padding-right: 10px; */
+  /* text-align: center; */
+  /* padding: 7px; */
+  height: 2rem;
+  display: flex;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .rectangle {
-  /* position: absolute;
-  left: 0; */
-  background-color: #f1d302;
-  height: 30px;
+  background-color: #738dc5;
+  height: 2rem;
+  z-index: 5;
 }
-.grow {
-  animation-name: grow;
+.rectangleLight {
+  position: absolute;
+  right: 0rem;
+  background-color: #4159853b;
+  height: 2rem;
+  width: 38rem;
+  z-index: 4;
+}
+
+.grow90 {
+  animation-name: grow90;
   animation-duration: 3s;
   animation-delay: 3s;
   animation-fill-mode: forwards;
 }
-@keyframes grow {
+@keyframes grow90 {
   0% {
     width: 0rem;
   }
   100% {
-    width: 60rem;
+    width: 31.5rem;
+  }
+}
+.grow70 {
+  animation-name: grow70;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes grow70 {
+  0% {
+    width: 0rem;
+  }
+  100% {
+    width: 24.5rem;
+  }
+}
+.grow60 {
+  animation-name: grow60;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes grow60 {
+  0% {
+    width: 0rem;
+  }
+  100% {
+    width: 21rem;
+  }
+}
+.grow30 {
+  animation-name: grow30;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes grow30 {
+  0% {
+    width: 0rem;
+  }
+  100% {
+    width: 10.2rem;
+  }
+}
+.grow40 {
+  animation-name: grow40;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes grow40 {
+  0% {
+    width: 0rem;
+  }
+  100% {
+    width: 14rem;
+  }
+}
+.grow50 {
+  animation-name: grow50;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes grow50 {
+  0% {
+    width: 0rem;
+  }
+  100% {
+    width: 17rem;
   }
 }

@@ -31,44 +31,63 @@ export default function Skills() {
         <div className="skillsContainer skillsGrid">
           <Slide left duration={1000}>
             <div className="skill">
-              <h5>REACT</h5>
-              <Reveal effect="grow" delay={1000}>
+              <h5>HTML</h5>
+              <Reveal effect="grow90" delay={1000}>
                 <div className="rectangle "></div>
               </Reveal>
             </div>
             <div className="skill">
-              <h5>REACT</h5>
-              <Reveal effect="grow" delay={1100}>
+              <h5>CSS</h5>
+              <Reveal effect="grow90" delay={1100}>
                 <div className="rectangle "></div>
               </Reveal>
             </div>
             <div className="skill">
-              <h5>REACT</h5>
-              <Reveal effect="grow" delay={1200}>
+              <h5>JavaScript</h5>
+              <Reveal effect="grow70" delay={1200}>
                 <div className="rectangle "></div>
               </Reveal>
             </div>
             <div className="skill">
-              <h5>REACT</h5>
-              <Reveal effect="grow" delay={1300}>
+              <h5>React</h5>
+              <Reveal effect="grow60" delay={1300}>
+                <div className="rectangle"></div>
+              </Reveal>
+              {/* <div className="rectangleLight"></div> */}
+            </div>
+            <div className="skill">
+              <h5>Ruby/Rails</h5>
+              <Reveal effect="grow60" delay={1400}>
                 <div className="rectangle"></div>
               </Reveal>
             </div>
             <div className="skill">
-              <h5>REACT</h5>
-              <Reveal effect="grow" delay={1400}>
+              <h5>SQL</h5>
+              <Reveal effect="grow40" delay={1500}>
                 <div className="rectangle"></div>
               </Reveal>
             </div>
             <div className="skill">
-              <h5>REACT</h5>
-              <Reveal effect="grow" delay={1500}>
+              <h5>Node</h5>
+              <Reveal effect="grow30" delay={1500}>
                 <div className="rectangle"></div>
               </Reveal>
             </div>
             <div className="skill">
-              <h5>REACT</h5>
-              <Reveal effect="grow" delay={1500}>
+              <h5>Figma</h5>
+              <Reveal effect="grow50" delay={1500}>
+                <div className="rectangle"></div>
+              </Reveal>
+            </div>
+            <div className="skill">
+              <h5>NextJS</h5>
+              <Reveal effect="grow40" delay={1500}>
+                <div className="rectangle"></div>
+              </Reveal>
+            </div>
+            <div className="skill">
+              <h5>Webpack</h5>
+              <Reveal effect="grow30" delay={1500}>
                 <div className="rectangle"></div>
               </Reveal>
             </div>
