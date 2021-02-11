@@ -45,32 +45,48 @@
   background: #f1d302;
   border-radius: 20% */
 
-  display: inline-block;
-  margin-right: 1rem;
+  /* position: absolute;
+  display: inline-block; */
+  /* margin-right: 1rem;
   margin-bottom: 1rem;
   padding-top: 0.5rem;
   padding-right: 1.5rem;
   padding-bottom: 0.5rem;
-  padding-left: 1.5rem;
+  padding-left: 1.5rem; */
+  /* background-color: white; */
+  /* color: transparent;
+  font-weight: 500;
+  font-size: 3rem; */
+  /* position: absolute;
+  display: inline-block; */
+  /* background-color: white; */
+  /* color: transparent;
+  text-transform: uppercase;
+  -webkit-text-stroke: #081123 1.5px;
+  font-weight: 700;
+  font-size: 3.7rem; */
+  padding-left: 1rem;
+  padding-right: 1rem;
+  /* background-color: white; */
+  position: absolute;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: inline-block;
   background-color: #f1d302;
   color: white;
+  text-transform: uppercase;
+  -webkit-text-stroke: white 1px;
+  font-weight: 400;
+  font-size: 1.5rem;
   border-radius: 50rem;
 }
 .skillsGrid {
-  /* width: 65%;
-  height: 50%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 20px 20px;
-  grid-template-areas:
-    ". . . ."
-    ". . . ."; */
 }
 
 .skillsContainer {
+  position: relative;
   height: 80%;
-  width: 100%;
+  width: 47%;
   align-items: center;
   display: flex;
   /* flex-wrap: wrap; */
@@ -78,18 +94,88 @@
 }
 
 .technicalRectangle > h3 {
-  -webkit-text-stroke: #ffffff9c 1px;
-  color: #f1d302;
+  -webkit-text-stroke: #ffffff 2px;
+  color: transparent;
   letter-spacing: 5rem;
   font-size: 6rem;
   text-transform: uppercase;
 }
 
 .technicalRectangle {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   background: #f1d302;
   width: 100%;
   height: 80%;
+  /* -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777; */
+}
+
+.react {
+  top: 1rem;
+  left: 5rem;
+}
+.js {
+  bottom: 2rem;
+  left: 10rem;
+}
+.xhtml {
+  right: 43rem;
+  top: 2rem;
+}
+.css {
+  right: 48rem;
+  bottom: 3rem;
+}
+.ruby {
+  top: 3rem;
+  left: 26rem;
+}
+.rails {
+  bottom: 12rem;
+  left: 70rem;
+}
+.postreSQL {
+  top: 6rem;
+  right: 7rem;
+}
+.figma {
+  bottom: 2rem;
+  left: 55rem;
+}
+
+.skill {
+  align-items: center;
+  display: flex;
+  justify-items: center;
+  width: 100%;
+}
+.skill > h5 {
+  text-align: center;
+  background: yellow;
+  padding: 7px;
+}
+
+.rectangle {
+  /* position: absolute;
+  left: 0; */
+  background-color: #f1d302;
+  height: 30px;
+}
+.grow {
+  animation-name: grow;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes grow {
+  0% {
+    width: 0rem;
+  }
+  100% {
+    width: 60rem;
+  }
 }

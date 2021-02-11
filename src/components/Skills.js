@@ -1,5 +1,7 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
+import Slide from "react-reveal/Slide";
+import Reveal from "react-reveal/Reveal";
 import "../styles/Skills.css";
 
 export default function Skills() {
@@ -26,40 +28,90 @@ export default function Skills() {
         <h1 className="skillsTitle">SKILLS</h1>
       </Fade>
       <div className="skillsRectangle">
-        <div className="skillsContainer">
-          <Fade left big duration={2000}>
-            <div className="technicalRectangle">
+        <div className="skillsContainer skillsGrid">
+          <Slide left duration={1000}>
+            <div className="skill">
+              <h5>REACT</h5>
+              <Reveal effect="grow" delay={1000}>
+                <div className="rectangle "></div>
+              </Reveal>
+            </div>
+            <div className="skill">
+              <h5>REACT</h5>
+              <Reveal effect="grow" delay={1100}>
+                <div className="rectangle "></div>
+              </Reveal>
+            </div>
+            <div className="skill">
+              <h5>REACT</h5>
+              <Reveal effect="grow" delay={1200}>
+                <div className="rectangle "></div>
+              </Reveal>
+            </div>
+            <div className="skill">
+              <h5>REACT</h5>
+              <Reveal effect="grow" delay={1300}>
+                <div className="rectangle"></div>
+              </Reveal>
+            </div>
+            <div className="skill">
+              <h5>REACT</h5>
+              <Reveal effect="grow" delay={1400}>
+                <div className="rectangle"></div>
+              </Reveal>
+            </div>
+            <div className="skill">
+              <h5>REACT</h5>
+              <Reveal effect="grow" delay={1500}>
+                <div className="rectangle"></div>
+              </Reveal>
+            </div>
+            <div className="skill">
+              <h5>REACT</h5>
+              <Reveal effect="grow" delay={1500}>
+                <div className="rectangle"></div>
+              </Reveal>
+            </div>
+          </Slide>
+          {/* <div className="technicalRectangle">
+            <Fade duration={2000}>
               <h3>Technical</h3>
-            </div>
-          </Fade>
-          {/* <Fade top big>
-            <div className="singleSkill">React</div>
-            <div className="singleSkill">Javascript</div>
-            <div className="singleSkill">HTML</div>
-            <div className="singleSkill">CSS</div>
-            <div className="singleSkill">Ruby</div>
-            <div className="singleSkill">Rails</div>
-            <div className="singleSkill">PostgreSQL</div>
-            <div className="singleSkill">Figma</div>
-          </Fade> */}
+            </Fade>
+            <Slide left delay={100} duration={1600}>
+              <div className="singleSkill react">React</div>
+            </Slide>
+            <Slide left big delay={800} duration={2000}>
+              <div className="singleSkill js">Javascript</div>
+            </Slide>
+            <Slide left big delay={900} duration={2000}>
+              <div className="singleSkill xhtml">HTML</div>
+            </Slide>
+            <Slide left big delay={100} duration={2000}>
+              <div className="singleSkill css">CSS</div>
+            </Slide>
+            <Slide left big delay={1100} duration={2000}>
+              <div className="singleSkill ruby">Ruby</div>
+            </Slide>
+            <Slide left big delay={1200} duration={2000}>
+              <div className="singleSkill rails">Rails</div>
+            </Slide>
+            <Slide left big delay={1300} duration={2000}>
+              <div className="singleSkill postreSQL">PostgreSQL</div>
+            </Slide>
+            <Slide left big delay={1400} duration={1700}>
+              <div className="singleSkill figma">Figma</div>
+            </Slide>
+          </div> */}
         </div>
-        <div className="skillsContainer">
-          <Fade right big duration={2000} delay={300}>
-            <div className="technicalRectangle">
+        {/* <div className="skillsContainer"> */}
+        {/* <Fade right big duration={2000} delay={300}> */}
+        {/* <div className="technicalRectangle">
+            <Fade duration={2000} delay={300}>
               <h3>Soft</h3>
-            </div>
-          </Fade>
-          {/* <Fade top big>
-            <div className="singleSkill">React</div>
-            <div className="singleSkill">Javascript</div>
-            <div className="singleSkill">HTML</div>
-            <div className="singleSkill">CSS</div>
-            <div className="singleSkill">Ruby</div>
-            <div className="singleSkill">Rails</div>
-            <div className="singleSkill">PostgreSQL</div>
-            <div className="singleSkill">Figma</div>
-          </Fade> */}
-        </div>
+            </Fade>
+          </div> */}
+        {/* </Fade> */}
+        {/* </div> */}
       </div>
     </div>
   );

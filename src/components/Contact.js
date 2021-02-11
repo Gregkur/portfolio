@@ -7,6 +7,7 @@ export default function Contact() {
     <>
       <div className="contact">
         <h1 className="contactTitle">CONTACT</h1>
+
         <Footer />
       </div>
     </>
