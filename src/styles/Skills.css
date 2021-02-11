@@ -16,15 +16,26 @@
   letter-spacing: 0.001em;
 }
 .skillsRectangle {
-  margin-top: 17rem;
+  /* margin-top: 17rem; */
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
   align-items: center;
   justify-content: space-evenly;
-  width: 50%;
+  /* justify-content: left; */
+  width: 100%;
+  height: 90%;
   /* background: #0e1c36; */
-  background: transparent;
+  /* background: transparent;*/
+  /* display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10rem 0px;
+  grid-template-areas:
+    "."
+    "."; */
 }
+
 .singleSkill {
   /* display: flex;
   align-items: center;
@@ -33,6 +44,7 @@
   color: white;
   background: #f1d302;
   border-radius: 20% */
+
   display: inline-block;
   margin-right: 1rem;
   margin-bottom: 1rem;
@@ -45,7 +57,7 @@
   border-radius: 50rem;
 }
 .skillsGrid {
-  width: 65%;
+  /* width: 65%;
   height: 50%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -53,5 +65,31 @@
   gap: 20px 20px;
   grid-template-areas:
     ". . . ."
-    ". . . .";
+    ". . . ."; */
+}
+
+.skillsContainer {
+  height: 80%;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+}
+
+.technicalRectangle > h3 {
+  -webkit-text-stroke: #ffffff9c 1px;
+  color: #f1d302;
+  letter-spacing: 5rem;
+  font-size: 6rem;
+  text-transform: uppercase;
+}
+
+.technicalRectangle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f1d302;
+  width: 100%;
+  height: 80%;
 }
