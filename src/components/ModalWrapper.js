@@ -18,22 +18,24 @@ const ModalWrapper = (props) => {
         <header>
           <h1>{props.title}</h1>
         </header>
+        <aside>{props.children}</aside>
         <div className="buttonContainer">
           <FontAwesomeIcon
             className="mIcon close"
             icon={faTimes}
             onClick={props.hideModal}
           />
-
-          {/* <button className="buttonModal" onClick={props.hideModal}>
-            Close
-          </button> */}
-          <FontAwesomeIcon className="mIcon link" icon={faGithub} />
-          <FontAwesomeIcon className="mIcon link" icon={faChrome} />
-          {/* <button className="buttonModal">Github</button>
-          <button className="buttonModal">Demo</button> */}
+          <FontAwesomeIcon
+            className="mIcon link"
+            icon={faGithub}
+            onClick={props.hideModal}
+          />
+          <FontAwesomeIcon
+            className="mIcon link"
+            icon={faChrome}
+            onClick={props.hideModal}
+          />
         </div>
-        {props.children}
       </div>
     </Zoom>
   );
