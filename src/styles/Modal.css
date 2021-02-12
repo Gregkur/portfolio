@@ -29,17 +29,30 @@
 .buttonModal:focus {
   outline: none;
 }
+
+.mIcon {
+  font-size: 2rem;
+  color: #f1d301;
+}
+.mIcon.close {
+  color: #0000008e;
+  position: absolute;
+  left: 0.2rem;
+}
+.mIcon.link {
+  margin-right: 0.2rem;
+}
 .buttonModal:hover {
-    background-color: #f1d301;
-    color: #ffff;
+  background-color: #f1d301;
+  color: #ffff;
   cursor: pointer;
 }
 .buttonContainer {
   position: absolute;
   bottom: 0.5rem;
   display: flex;
-  justify-content: space-evenly;
-  width: 100%;
+  justify-content: flex-end;
+  width: 95%;
 }
 .carousel {
   width: 100%;
