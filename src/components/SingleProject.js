@@ -3,7 +3,7 @@ import Fade from "react-reveal/Fade";
 
 export default function SingleProject(props) {
   const [hideInfo, setHideInfo] = useState("hide");
-  const { title, stack, photo } = props;
+  const { modal, changeModal, title, stack, photo } = props;
 
   const handleEnter = (e) => {
     setHideInfo("");
@@ -13,6 +13,9 @@ export default function SingleProject(props) {
   const handleLeave = (e) => {
     setHideInfo("hide");
   };
+  const handleClick = (e) => {
+    changeModal(modal)
+  }
   return (
     <div
       onMouseEnter={handleEnter}
@@ -29,7 +32,7 @@ export default function SingleProject(props) {
           </div>
         </Fade>
         <Fade bottom duration={500} delay={300}>
-          <button>View Project</button>
+          <button onClick={handleClick}>View Project</button>
         </Fade>
       </div>
     </div>
