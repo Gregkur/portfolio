@@ -1,4 +1,5 @@
 import React from "react";
+import SingleProject from "./SingleProject";
 import Fade from "react-reveal/Fade";
 import "../styles/Projects.css";
 
@@ -9,35 +10,23 @@ export default function Projects() {
         <h1 className="projectsTitle">PROJECTS</h1>
       </Fade>
       <div className="grid-container">
-        {/* TODO make into a component */}
-        <Fade bottom duration={1500}>
-          <div
-            className="project"
-            style={{
-              backgroundImage:
-                "linear-gradient(rgb(0 0 0 / 21%) 38%, rgba(255, 255, 255, 0) 100%),url(images/portfolio.png",
-            }}>
-              
-
-            </div>
-          <div
-            className="project"
-            style={{
-              backgroundImage:
-                "linear-gradient(rgb(0 0 0 / 21%) 38%, rgba(255, 255, 255, 0) 100%),url(images/shadr.png",
-            }}></div>
-          <div
-            className="project"
-            style={{
-              backgroundImage:
-                "linear-gradient(rgb(0 0 0 / 21%) 38%, rgba(255, 255, 255, 0) 100%),url(images/social.png",
-            }}></div>
-          <div
-            className="project"
-            style={{
-              backgroundImage:
-                "linear-gradient(rgb(0 0 0 / 21%) 38%, rgba(255, 255, 255, 0) 100%),url(images/art.png",
-            }}></div>
+        <Fade bottom duration={1500} fraction={0.8}>
+          <SingleProject
+            title="Portfolio"
+            stack="ReactJS"
+            photo="portfolio.png"
+          />
+          <SingleProject
+            title="Shadr"
+            stack="ReactJS/Router/NextJS"
+            photo="shadr.png"
+          />
+          <SingleProject
+            title="Social Book Club"
+            stack="Ruby/Rails/JavaScript"
+            photo="social.png"
+          />
+          <SingleProject title="Art Space" stack="Ruby/Rails" photo="art.png" />
         </Fade>
       </div>
     </div>

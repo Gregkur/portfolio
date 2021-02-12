@@ -26,9 +26,21 @@
   grid-row-gap: 0rem;
 }
 .project {
+  height: 100%;
   background-size: cover;
   background-position: center;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.infoContainer{
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hide{
+  display:none;
 }
