@@ -34,13 +34,55 @@
   align-items: center;
   justify-content: center;
 }
-.infoContainer{
-  height:100%;
+.infoContainer {
+  height: 100%;
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  transition: all 0.6s ease-in-out;
 }
-.hide{
-  display:none;
+.infoContainer:hover {
+  background: #ffffff;
+}
+.infoContainerText {
+  top: 0.5rem;
+  position: absolute;
+  text-align: center;
+}
+.infoContainerText > h2 {
+  margin-bottom: -0.6rem;
+  font-size: 2rem;
+  font-weight: 300;
+  color: #0e1c36;
+}
+.infoContainerText > h3 {
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: #738dc5;
+}
+.infoContainer > button {
+  position: absolute;
+  bottom: 4.5rem;
+  width: 10rem;
+  background: transparent;
+  height: 2.5rem;
+  border: 2px #738dc5 solid;
+  font-family: "Raleway";
+  font-size: 1rem;
+  font-weight: 500;
+  color: #505050;
+  transition: all 0.4s ease-in-out;
+}
+.infoContainer > button:hover {
+  background-color: #f1d301;
+  border: 2px #f1d301 solid;
+  color: #ffff;
+}
+.hide {
+  /* visibility: hidden; */
+  display: none;
+  /* opacity: 0 !important; */
 }

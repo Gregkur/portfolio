@@ -1,15 +1,17 @@
 import { React, useState } from "react";
+import Fade from "react-reveal/Fade";
 
 export default function SingleProject(props) {
-  const [infoShowing, setinfoShowing] = useState(false);
+  const [hideInfo, setHideInfo] = useState("hide");
   const { title, stack, photo } = props;
 
   const handleEnter = (e) => {
-    setinfoShowing(true);
-    console.log(e.target);
+    setHideInfo("");
+    // console.log(e.target.firstChild);
+    // e.target.firstChild.classList.add("slideDown");
   };
-  const handleLeave = () => {
-    setinfoShowing(false);
+  const handleLeave = (e) => {
+    setHideInfo("hide");
   };
   return (
     <div
@@ -19,10 +21,16 @@ export default function SingleProject(props) {
       style={{
         backgroundImage: `linear-gradient(rgb(0 0 0 / 21%) 38%, rgba(255, 255, 255, 0) 100%),url(images/${photo}`,
       }}>
-      <div className={`infoContainer ${!infoShowing && `hide`}`}>
-        <h2>{title}</h2>
-        <h3>{stack}</h3>
-        <button>View Project</button>
+      <div className={`infoContainer ${hideInfo}`}>
+        <Fade top duration={500} distance={"40%"}>
+          <div className="infoContainerText">
+            <h2>{title}</h2>
+            <h3>{stack}</h3>
+          </div>
+        </Fade>
+        <Fade bottom duration={500} delay={200}>
+          <button>View Project</button>
+        </Fade>
       </div>
     </div>
   );

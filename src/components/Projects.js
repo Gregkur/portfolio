@@ -10,7 +10,7 @@ export default function Projects() {
         <h1 className="projectsTitle">PROJECTS</h1>
       </Fade>
       <div className="grid-container">
-        <Fade bottom duration={1500} fraction={0.8}>
+        <Fade bottom duration={1000} fraction={0.8}>
           <SingleProject
             title="Portfolio"
             stack="ReactJS"
