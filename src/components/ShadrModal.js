@@ -2,18 +2,21 @@ import React from 'react';
 
 import ModalWrapper from './ModalWrapper.js';
 
-const Portfolio = props => {
+const Shadr = props => {
+//   const portfolio = provider => {
+//     props.hideModal();
+//   };
 
   return (
     <ModalWrapper
       {...props}
-      title="Portfolio"
+      title="Shadr"
       width={500}
       showOk={false}
     >
-      <p>Portfolio</p>
+      <p>Shadr</p>
     </ModalWrapper>
   );
 };
 
-export default Portfolio;
+export default Shadr;

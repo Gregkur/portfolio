@@ -2,18 +2,21 @@ import React from 'react';
 
 import ModalWrapper from './ModalWrapper.js';
 
-const Portfolio = props => {
+const Social = props => {
+//   const portfolio = provider => {
+//     props.hideModal();
+//   };
 
   return (
     <ModalWrapper
       {...props}
-      title="Portfolio"
+      title="Social Book Club"
       width={500}
       showOk={false}
     >
-      <p>Portfolio</p>
+      <p>Social Book Club</p>
     </ModalWrapper>
   );
 };
 
-export default Portfolio;
+export default Social;

@@ -7,12 +7,10 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Loader from "./components/Loader";
-import ModalConductor from "./components/ModalConstructor";
 import Particles from "react-particles-js";
 import { particleParams } from "./particles";
 
 function App() {
-  const [currentModal, setCurrentModal ]= useState("");
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -23,12 +21,6 @@ function App() {
       setLoading(false);
     }, 2600);
   }, []);
-
-  const changeModal = (modal) => {
-    console.log('from main app')
-    console.log(modal)
-    setCurrentModal(modal)
-  }
 
   return (
     <>
@@ -43,8 +35,7 @@ function App() {
       <Navbar />
       <About />
       <Skills />
-      <ModalConductor currentModal={currentModal} />
-      <Projects changeModal={changeModal} />
+      <Projects />
       <Contact />
     </>
   );

@@ -1,12 +1,29 @@
-import React from "react";
+import { React, useState } from "react";
 import SingleProject from "./SingleProject";
+import ModalConductor from "./ModalConstructor";
 import Fade from "react-reveal/Fade";
 import "../styles/Projects.css";
 
-export default function Projects(props) {
-  const {changeModal} = props
+export default function Projects() {
+  const [currentModal, setCurrentModal] = useState("");
+  const root = document.querySelector("body");
+
+  const changeModal = (modal) => {
+    setCurrentModal(modal);
+  };
+
+  const hideModal = () => {
+    setCurrentModal("");
+  };
   return (
     <div className="projects">
+  
+        <ModalConductor
+          currentModal={currentModal}
+          hideModal={hideModal}
+          root={root}
+        />
+
       <Fade left duration={1200} delay={100} fraction={0.8}>
         <h1 className="projectsTitle">PROJECTS</h1>
       </Fade>
