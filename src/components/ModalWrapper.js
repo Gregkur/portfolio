@@ -1,4 +1,5 @@
 import React from "react";
+import ModalCarousel from "./ModalCarousel";
 import Zoom from "react-reveal/Zoom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
@@ -14,7 +15,8 @@ const ModalWrapper = (props) => {
   return (
     <Zoom duration={500}>
       <div onClick={handleBackgroundClick} className="modalWrapper">
-        <div className="carousel"></div>
+        <ModalCarousel />
+        {/* <div className="carousel"></div> */}
         <header>
           <h1>{props.title}</h1>
         </header>
