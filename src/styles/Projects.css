@@ -64,7 +64,7 @@
   font-weight: 300;
   color: #738dc5;
 }
-.infoContainer > button {
+.buttonGold {
   position: absolute;
   bottom: 4.5rem;
   width: 10rem;
@@ -75,12 +75,16 @@
   font-size: 1rem;
   font-weight: 500;
   color: #505050;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
-.infoContainer > button:hover {
+.buttonGold:hover {
   background-color: #f1d301;
-  border: 2px #f1d301 solid;
+  cursor: pointer;
   color: #ffff;
+  border: 2px #f1d301 solid;
+}
+.buttonGold:focus {
+  outline: none;
 }
 .hide {
   /* visibility: hidden; */

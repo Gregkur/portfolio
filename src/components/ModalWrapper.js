@@ -7,30 +7,21 @@ const ModalWrapper = (props) => {
   const handleBackgroundClick = (e) => {
     if (e.target === e.currentTarget) props.hideModal();
   };
-
-  // const onOk = () => {
-  //   props.onOk();
-  //   props.hideModal();
-  // };
-
-  // const okButton = props.showOk ? (
-  //   <button onClick={onOk} disabled={props.okDisabled}>
-  //     {props.okText}
-  //   </button>
-  // ) : null;
-
   return (
-    <Zoom duration={1200}>
+    <Zoom duration={500}>
       <div onClick={handleBackgroundClick} className="modalWrapper">
+        <div className="carousel"></div>
         <header>
           <h1>{props.title}</h1>
-
-          <button onClick={props.hideModal}>Close</button>
         </header>
-
+        <div className="buttonContainer">
+          <button className="buttonModal" onClick={props.hideModal}>
+            Close
+          </button>
+          <button className="buttonModal">Github</button>
+          <button className="buttonModal">Demo</button>
+        </div>
         {props.children}
-
-        {/* {okButton} */}
       </div>
     </Zoom>
   );

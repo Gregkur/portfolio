@@ -15,14 +15,17 @@ export default function Projects() {
   const hideModal = () => {
     setCurrentModal("");
   };
+
+  const isBlackout = currentModal !== "";
   return (
     <div className="projects">
-  
-        <ModalConductor
-          currentModal={currentModal}
-          hideModal={hideModal}
-          root={root}
-        />
+      <div className={isBlackout && "blackout"}></div>
+
+      <ModalConductor
+        currentModal={currentModal}
+        hideModal={hideModal}
+        root={root}
+      />
 
       <Fade left duration={1200} delay={100} fraction={0.8}>
         <h1 className="projectsTitle">PROJECTS</h1>
