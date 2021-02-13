@@ -6,7 +6,7 @@ import "../styles/Projects.css";
 
 export default function Projects() {
   const [currentModal, setCurrentModal] = useState("");
-  const root = document.querySelector("body");
+  const background = document.querySelector(".blackout");
 
   const changeModal = (modal) => {
     setCurrentModal(modal);
@@ -22,9 +22,9 @@ export default function Projects() {
       <ModalConductor
         currentModal={currentModal}
         hideModal={hideModal}
-        root={root}
+        background={background}
       />
-      <div className={isBlackout && "blackout"}></div>
+      <div className={isBlackout && "blackout"} onClick={hideModal}></div>
       <Fade left duration={1200} delay={100} fraction={0.8}>
         <h1 className="projectsTitle">PROJECTS</h1>
       </Fade>
@@ -47,7 +47,7 @@ export default function Projects() {
             changeModal={changeModal}
           />
         </Fade>
-        <Fade bottom duration={1200} fraction={0.8} delay={500}>
+        <Fade bottom duration={1000} fraction={0.5} delay={400}>
           <SingleProject
             title="Social Book Club"
             stack="Ruby/Rails/JavaScript"
@@ -56,7 +56,7 @@ export default function Projects() {
             changeModal={changeModal}
           />
         </Fade>
-        <Fade bottom duration={1200} fraction={0.8} delay={700}>
+        <Fade bottom duration={1000} fraction={0.5} delay={500}>
           <SingleProject
             title="Art Space"
             stack="Ruby/Rails"

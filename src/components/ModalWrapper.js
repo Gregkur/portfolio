@@ -9,14 +9,11 @@ import { faChrome } from "@fortawesome/free-brands-svg-icons";
 import "../styles/Modal.css";
 
 const ModalWrapper = (props) => {
-  const handleBackgroundClick = (e) => {
-    if (e.target === e.currentTarget) props.hideModal();
-  };
+
   return (
     <Zoom duration={500}>
-      <div onClick={handleBackgroundClick} className="modalWrapper">
+      <div className="modalWrapper">
         <ModalCarousel />
-        {/* <div className="carousel"></div> */}
         <header>
           <h1>{props.title}</h1>
         </header>
