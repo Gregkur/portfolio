@@ -81,6 +81,9 @@ form {
   color: #ffff;
   border: 1px #f1d301 solid;
 }
+.contactForm > button:focus {
+  outline: none;
+}
 .contactTextContainer {
   display: flex;
   position: absolute;
@@ -105,4 +108,21 @@ form {
 .contactTextBottom {
   position: absolute;
   bottom: 0;
+}
+.snackbar {
+  display: flex;
+  height: 28vh;
+  padding: 0px 10px 0px 7px;
+  background: #081123;
+  position: fixed;
+  left: 38vw;
+  bottom: 39.2vh;
+  z-index: 1000;
+  width: 23vw;
+  align-items: center;
+  justify-content: center;
+}
+.snackbar > h1 {
+  margin: 0;
+  font-size: 1rem;
 }
