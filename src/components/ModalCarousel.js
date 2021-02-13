@@ -29,7 +29,7 @@ export default function ModalCarousel(props) {
   const { currentModal } = props;
 
   return (
-    <Carousel defaultWait={2500}>
+    <Carousel defaultWait={1700}>
       <Slide right>
         <div className="modal-carousel">
           <img src={`./images/${currentModal}/1.png`} alt="website" />

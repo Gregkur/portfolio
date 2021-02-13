@@ -1,5 +1,7 @@
 import { React, Component } from "react";
 import { Link } from "react-scroll";
+import Pdf from "../documents/cv.pdf";
+
 import "../styles/Navbar.css";
 
 export default class Navbar extends Component {
@@ -26,14 +28,7 @@ export default class Navbar extends Component {
   };
 
   render() {
-    const navbarItems = [
-      "Home",
-      "About",
-      "Skills",
-      "Projects",
-      "Contact",
-      "CV",
-    ];
+    const navbarItems = ["Home", "About", "Skills", "Projects", "Contact"];
     const mappedNavbarItems = navbarItems.map((item) => (
       <Link
         className="menuItem"
@@ -45,10 +40,19 @@ export default class Navbar extends Component {
         offset={-40}>
         {item}
       </Link>
+      // href = {Pdf} target = "_blank"
     ));
+    const cv = (
+      <a className="menuItem" href={Pdf} target="_blank" rel="noreferrer">
+        Resume
+      </a>
+    );
     return (
       <div className={`nav ${this.state.nav && "sticky"}`}>
-        <span className="menuContainer">{mappedNavbarItems}</span>
+        <span className="menuContainer">
+          {mappedNavbarItems}
+          {cv}
+        </span>
       </div>
     );
   }

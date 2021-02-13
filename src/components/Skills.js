@@ -65,57 +65,19 @@ export default function Skills() {
             <div className="skill">
               <h5>Figma</h5>
               <p>50%</p>
-              <Reveal effect="grow50" delay={1800}>
+              <Reveal effect="grow50" delay={1720}>
                 <div className="rectangle"></div>
               </Reveal>
             </div>
             <div className="skill">
               <h5>NextJS</h5>
               <p>40%</p>
-              <Reveal effect="grow60" delay={1900}>
+              <Reveal effect="grow60" delay={1750}>
                 <div className="rectangle"></div>
               </Reveal>
             </div>
           </Slide>
-          {/* <div className="technicalRectangle">
-            <Fade duration={2000}>
-              <h3>Technical</h3>
-            </Fade>
-            <Slide left delay={100} duration={1600}>
-              <div className="singleSkill react">React</div>
-            </Slide>
-            <Slide left big delay={800} duration={2000}>
-              <div className="singleSkill js">Javascript</div>
-            </Slide>
-            <Slide left big delay={900} duration={2000}>
-              <div className="singleSkill xhtml">HTML</div>
-            </Slide>
-            <Slide left big delay={100} duration={2000}>
-              <div className="singleSkill css">CSS</div>
-            </Slide>
-            <Slide left big delay={1100} duration={2000}>
-              <div className="singleSkill ruby">Ruby</div>
-            </Slide>
-            <Slide left big delay={1200} duration={2000}>
-              <div className="singleSkill rails">Rails</div>
-            </Slide>
-            <Slide left big delay={1300} duration={2000}>
-              <div className="singleSkill postreSQL">PostgreSQL</div>
-            </Slide>
-            <Slide left big delay={1400} duration={1700}>
-              <div className="singleSkill figma">Figma</div>
-            </Slide>
-          </div> */}
         </div>
-        {/* <div className="skillsContainer"> */}
-        {/* <Fade right big duration={2000} delay={300}> */}
-        {/* <div className="technicalRectangle">
-            <Fade duration={2000} delay={300}>
-              <h3>Soft</h3>
-            </Fade>
-          </div> */}
-        {/* </Fade> */}
-        {/* </div> */}
       </div>
     </div>
   );

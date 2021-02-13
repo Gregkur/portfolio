@@ -51,6 +51,7 @@
   color: white;
   transition: 0.3s;
   cursor: pointer;
+  text-decoration: none;
 }
 .menuItem:hover {
   color: #f1d302;
