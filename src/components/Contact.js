@@ -8,7 +8,9 @@ export default function Contact() {
     <>
       <div className="contact">
         <h1 className="contactTitle">CONTACT</h1>
-        <ContactForm/>
+        <div className="contactFormContainer">
+          <ContactForm />
+        </div>
         <Footer />
       </div>
     </>
