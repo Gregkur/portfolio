@@ -4,7 +4,7 @@ import ModalWrapper from "./ModalWrapper.js";
 
 const Portfolio = (props) => {
   return (
-    <ModalWrapper {...props} title="Portfolio" width={500} showOk={false}>
+    <ModalWrapper {...props} title="Portfolio" >
       <p>
         {" "}
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas justo

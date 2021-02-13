@@ -19,14 +19,12 @@ export default function Projects() {
   const isBlackout = currentModal !== "";
   return (
     <div className="projects">
-      <div className={isBlackout && "blackout"}></div>
-
       <ModalConductor
         currentModal={currentModal}
         hideModal={hideModal}
         root={root}
       />
-
+      <div className={isBlackout && "blackout"}></div>
       <Fade left duration={1200} delay={100} fraction={0.8}>
         <h1 className="projectsTitle">PROJECTS</h1>
       </Fade>

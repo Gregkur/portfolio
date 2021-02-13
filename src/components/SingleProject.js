@@ -18,7 +18,7 @@ export default function SingleProject(props) {
   };
   return (
     <div
-      onMouseEnter={handleEnter}
+      onMouseOver={handleEnter}
       onMouseLeave={handleLeave}
       className="project"
       style={{
@@ -32,7 +32,9 @@ export default function SingleProject(props) {
           </div>
         </Fade>
         <Fade bottom duration={400} delay={100}>
-          <button  className="buttonGold"onClick={handleClick}>View Project</button>
+          <button className="buttonGold" onClick={handleClick}>
+            View Project
+          </button>
         </Fade>
       </div>
     </div>
