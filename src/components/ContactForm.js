@@ -1,44 +1,37 @@
-import React, { useState } from "react";
+import React from "react";
+import emailjs from "emailjs-com";
 
-const ContactForm = () => {
-  const [status, setStatus] = useState("Submit");
-  const handleSubmit = async (e) => {
+// import "./ContactUs.css";
+
+export default function ContactUs() {
+  const emailID = process.env.REACT_APP_EMAIL_JS_KEY;
+  const templateID = process.env.REACT_APP_TEMPLADE_ID_KEY;
+  const userID = process.env.REACT_APP_USER_ID_KEY;
+
+  function sendEmail(e) {
     e.preventDefault();
-    setStatus("Sending...");
-    const { name, email, message } = e.target.elements;
-    let details = {
-      name: name.value,
-      email: email.value,
-      message: message.value,
-    };
-    let response = await fetch("http://localhost:3000/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
+
+    emailjs.sendForm(emailID, templateID, e.target, userID).then(
+      (result) => {
+        console.log(result.text);
       },
-      body: JSON.stringify(details),
-    });
-    setStatus("Submit");
-    let result = await response.json();
-    alert(result.status);
-  };
+      (error) => {
+        console.log(error.text);
+      }
+      );
+      e.target.reset()
+  }
+
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label htmlFor="name">Name:</label>
-        <input type="text" id="name" required />
-      </div>
-      <div>
-        <label htmlFor="email">Email:</label>
-        <input type="email" id="email" required />
-      </div>
-      <div>
-        <label htmlFor="message">Message:</label>
-        <textarea id="message" required />
-      </div>
-      <button type="submit">{status}</button>
+    <form id="form" onSubmit={sendEmail}>
+      <input type="hidden" name="contact_number" />
+      <label>Name</label>
+      <input type="text" name="user_name" />
+      <label>Email</label>
+      <input type="email" name="user_email" />
+      <label>Message</label>
+      <textarea name="message" />
+      <input type="submit" value="Send" />
     </form>
   );
-};
-
-export default ContactForm;
+}
