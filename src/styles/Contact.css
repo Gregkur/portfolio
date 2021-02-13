@@ -4,6 +4,7 @@
   flex-direction: column;
   height: 95vh;
   background: transparent;
+  position: relative;
 }
 
 .contactTitle {
@@ -17,6 +18,8 @@
 }
 .contactFormContainer {
   /* background: white; */
+  position: absolute;
+  bottom: 15rem;
   height: 45%;
   width: 35%;
   display: flex;
@@ -77,4 +80,29 @@ form {
   cursor: pointer;
   color: #ffff;
   border: 1px #f1d301 solid;
+}
+.contactTextContainer {
+  display: flex;
+  position: absolute;
+  top: 10rem;
+  flex-direction: column;
+  align-items: center;
+}
+.contactTextContainer * {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Raleway";
+  margin: 0;
+  color: white;
+}
+.contactTextBottom * {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Raleway";
+  margin: 0;
+  color: white;
+}
+.contactTextBottom {
+  position: absolute;
+  bottom: 0;
 }
