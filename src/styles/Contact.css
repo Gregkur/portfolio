@@ -113,8 +113,9 @@ form {
   display: flex;
   height: 28vh;
   padding: 0px 10px 0px 7px;
-  background: #081123;
-  position: fixed;
+  background: #081122;
+  border: 2px #f1d301 solid;
+  position: absolute;
   left: 38vw;
   bottom: 39.2vh;
   z-index: 1000;
@@ -124,5 +125,6 @@ form {
 }
 .snackbar > h1 {
   margin: 0;
-  font-size: 1rem;
+  font-weight: 400;
+  font-size: 1.2rem;
 }

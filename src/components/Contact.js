@@ -14,7 +14,7 @@ export default function Contact() {
     setSnackbarShowing(true);
     setTimeout(() => {
       setSnackbarShowing(false);
-    }, 4000);
+    }, 3000);
   };
   return (
     <>
