@@ -8,16 +8,16 @@ import SocialModal from './SocialModal.js';
 const ModalConductor = props => {
   switch (props.currentModal) {
     case 'PORTFOLIO':
-      return <PortfolioModal {...props}/>;
+      return <PortfolioModal website="https://shadr.herokuapp.com/" github="https://github.com/Gregkur/portfolio" {...props}/>;
 
     case 'ART':
-      return <ArtSpaceModal {...props}/>;
+      return <ArtSpaceModal website="http://www.artspace490.herokuapp.com/" github="https://github.com/Gregkur/artspace"{...props}/>;
 
     case 'SHADR':
-      return <ShadrModal {...props}/>;
+      return <ShadrModal website="https://shadr.herokuapp.com/" github="https://github.com/Gregkur/Shadr"{...props}/>;
 
     case 'SOCIAL':
-      return <SocialModal {...props}/>;
+      return <SocialModal website="https://www.socialbookclub.online/" github="https://github.com/Gregkur/social_book_club"{...props}/>;
 
     default:
       return null;

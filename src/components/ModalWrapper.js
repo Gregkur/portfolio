@@ -9,30 +9,33 @@ import { faChrome } from "@fortawesome/free-brands-svg-icons";
 import "../styles/Modal.css";
 
 const ModalWrapper = (props) => {
+  const {title, children, hideModal, github, website} = props
   return (
     <Zoom duration={600}>
       <div className="modalWrapper">
-        <ModalCarousel {...props}/>
+        <ModalCarousel {...props} />
         <header>
-          <h1>{props.title}</h1>
+          <h1>{title}</h1>
         </header>
-        <aside>{props.children}</aside>
+        <aside>{children}</aside>
         <div className="buttonContainer">
           <FontAwesomeIcon
             className="mIcon close"
             icon={faTimes}
-            onClick={props.hideModal}
+            onClick={hideModal}
           />
-          <FontAwesomeIcon
-            className="mIcon link"
-            icon={faGithub}
-            onClick={props.hideModal}
-          />
-          <FontAwesomeIcon
-            className="mIcon link"
-            icon={faChrome}
-            onClick={props.hideModal}
-          />
+          <a href={github} target="_blank" rel="noreferrer">
+            <FontAwesomeIcon
+              className="mIcon link"
+              icon={faGithub}
+            />
+          </a>
+          <a href={website} target="_blank" rel="noreferrer">
+            <FontAwesomeIcon
+              className="mIcon link"
+              icon={faChrome}
+            />
+          </a>
         </div>
       </div>
     </Zoom>
