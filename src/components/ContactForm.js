@@ -1,8 +1,6 @@
 import React from "react";
 import emailjs from "emailjs-com";
 
-// import "./ContactUs.css";
-
 export default function ContactUs() {
   const emailID = process.env.REACT_APP_EMAIL_JS_KEY;
   const templateID = process.env.REACT_APP_TEMPLADE_ID_KEY;
