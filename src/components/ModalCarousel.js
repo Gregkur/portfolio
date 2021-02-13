@@ -25,22 +25,24 @@ const CarouselUI = ({ children }) => (
 );
 const Carousel = makeCarousel(CarouselUI);
 
-export default function ModalCarousel() {
+export default function ModalCarousel(props) {
+  const { currentModal } = props;
+
   return (
     <Carousel defaultWait={2500}>
       <Slide right>
         <div className="modal-carousel">
-          <img src="./images/art.png" />
+          <img src={`./images/${currentModal}/1.png`} alt="website" />
         </div>
       </Slide>
       <Slide right>
         <div className="modal-carousel">
-          <img src="./images/art.png" />
+          <img src={`./images/${currentModal}/2.png`} alt="close up" />
         </div>
       </Slide>
       <Slide right>
         <div className="modal-carousel">
-          <img src="./images/art.png" />
+          <img src={`./images/${currentModal}/3.png`} alt="details" />
         </div>
       </Slide>
     </Carousel>

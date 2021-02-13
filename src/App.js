@@ -8,7 +8,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Loader from "./components/Loader";
 import Particles from "react-particles-js";
-import { particleParams } from "./particles";
+import { particleParams } from "./scripts/particles";
 
 function App() {
   const [loading, setLoading] = useState(true);

@@ -12,7 +12,7 @@ const ModalWrapper = (props) => {
   return (
     <Zoom duration={600}>
       <div className="modalWrapper">
-        <ModalCarousel />
+        <ModalCarousel {...props}/>
         <header>
           <h1>{props.title}</h1>
         </header>
