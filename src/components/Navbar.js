@@ -32,6 +32,7 @@ export default class Navbar extends Component {
     const mappedNavbarItems = navbarItems.map((item) => (
       <Link
         className="menuItem"
+        key={item}
         activeClass="active"
         to={item.toLocaleLowerCase()}
         spy={true}

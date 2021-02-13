@@ -28,7 +28,7 @@ export default function Projects() {
         hideModal={hideModal}
         background={background}
       />
-      <div className={isBlackout && "blackout"} onClick={hideModal}></div>
+      <div className={isBlackout ? "blackout" : ""} onClick={hideModal}></div>
       <Fade left duration={1200} delay={100} fraction={0.8}>
         <h1 className="projectsTitle">PROJECTS</h1>
       </Fade>
