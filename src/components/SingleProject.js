@@ -25,13 +25,13 @@ export default function SingleProject(props) {
         backgroundImage: `linear-gradient(rgb(0 0 0 / 21%) 38%, rgba(255, 255, 255, 0) 100%),url(images/${photo}`,
       }}>
       <div className={`infoContainer ${hideInfo}`}>
-        <Fade top duration={400} distance={"40%"}>
+        <Fade top duration={300} distance={"50%"}>
           <div className="infoContainerText">
             <h2>{title}</h2>
             <h3>{stack}</h3>
           </div>
         </Fade>
-        <Fade bottom duration={400} delay={100}>
+        <Fade bottom duration={300} delay={100}>
           <button className="buttonGold" onClick={handleClick}>
             View Project
           </button>

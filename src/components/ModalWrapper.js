@@ -9,9 +9,8 @@ import { faChrome } from "@fortawesome/free-brands-svg-icons";
 import "../styles/Modal.css";
 
 const ModalWrapper = (props) => {
-
   return (
-    <Zoom duration={500}>
+    <Zoom duration={600}>
       <div className="modalWrapper">
         <ModalCarousel />
         <header>
