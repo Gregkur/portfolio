@@ -14,7 +14,6 @@ const Portfolio = (props) => {
         vehicula ipsum ac, tristique est. Phasellus tempor enim fringilla
         convallis hendrerit. Cras lorem leo, pretium in fermentum ac,
         ullamcorper eget ipsum.Cras lorem leo, pretium in fermentum ac,
-        ullamcorper eget ipsum. Cras lorem leo, pretium in fermentum ac,
         ullamcorper eget ipsum.
       </p>
     </ModalWrapper>

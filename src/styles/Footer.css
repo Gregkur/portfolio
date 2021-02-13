@@ -5,13 +5,14 @@
 
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   height: 8rem;
   background: #081122;
 }
 .mainFooter > svg {
   color: #ffffff;
-  font-size: 55px;
+  font-size: 2rem;
+  margin: 0.5rem;
 }
 .arrowUp {
   z-index: 10;
@@ -25,4 +26,12 @@
 }
 .arrowUp:hover {
   color: white;
+}
+.mainFooter > h2 {
+  color: #738dc5a1;
+  position: absolute;
+  bottom: 1.5rem;
+  font-size: 0.6rem;
+  font-weight: 400;
+  font-family: "Raleway";
 }
