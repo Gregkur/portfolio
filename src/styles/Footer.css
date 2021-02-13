@@ -9,10 +9,15 @@
   height: 8rem;
   background: #081122;
 }
-.mainFooter > svg {
+.footerIcon {
   color: #ffffff;
   font-size: 2rem;
   margin: 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+.footerIcon:hover{
+  color: #f1d302;
+  cursor: pointer;
 }
 .arrowUp {
   z-index: 10;

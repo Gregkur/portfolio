@@ -22,11 +22,28 @@ export default function Footer() {
         onClick={scrollToTop}
       />
       <div className="mainFooter">
-        <FontAwesomeIcon className="footerIcon" icon={faLinkedin} />
-        <FontAwesomeIcon className="footerIcon" icon={faGithubSquare} />
-        <FontAwesomeIcon className="footerIcon" icon={faFacebookSquare} />
-        <FontAwesomeIcon className="footerIcon" icon={faInstagramSquare} />
-      <h2>Grzegorz Kurzajczyk ©2021</h2>
+        <a
+          href="https://www.linkedin.com/in/grzegorz-kurzajczyk/"
+          target="_blank"
+          rel="noreferrer">
+          <FontAwesomeIcon className="footerIcon" icon={faLinkedin} />
+        </a>
+        <a href="https://github.com/Gregkur" target="_blank" rel="noreferrer">
+          <FontAwesomeIcon className="footerIcon" icon={faGithubSquare} />
+        </a>
+        <a
+          href="https://www.facebook.com/purestubbornness"
+          target="_blank"
+          rel="noreferrer">
+          <FontAwesomeIcon className="footerIcon" icon={faFacebookSquare} />
+        </a>
+        <a
+          href="https://www.instagram.com/puresturheit/"
+          target="_blank"
+          rel="noreferrer">
+          <FontAwesomeIcon className="footerIcon" icon={faInstagramSquare} />
+        </a>
+        <h2>Grzegorz Kurzajczyk ©2021</h2>
       </div>
     </>
   );
