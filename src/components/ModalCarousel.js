@@ -6,7 +6,7 @@ import Slide from "react-reveal/Slide";
 // we'll use styled components for this tutorial
 // but you can use any other styling options ( like plain old css )
 import styled, { css } from "styled-components";
-const width = "32rem",
+const width = "100%",
   height = "19rem";
 const Container = styled.div`
   position: relative;

@@ -6,14 +6,18 @@ import "../styles/Projects.css";
 
 export default function Projects() {
   const [currentModal, setCurrentModal] = useState("");
+
   const background = document.querySelector(".blackout");
+  const body = document.querySelector("body");
 
   const changeModal = (modal) => {
     setCurrentModal(modal);
+    body.classList.add("noScroll");
   };
 
   const hideModal = () => {
     setCurrentModal("");
+    body.classList.remove("noScroll");
   };
 
   const isBlackout = currentModal !== "";
