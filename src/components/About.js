@@ -50,10 +50,11 @@ export default function About() {
         <Fade left duration={1200} fraction={0.8}>
           <p className="aboutText">
             My name is Grzegorz, but please, call me Greg.
-            <br /> Born in Poland, but found home in Germany. Alumni of Le Wagon
-            web development weeks Bootcamp. Young creative eager to take on new
-            challenges, projects, and opportunities. Perfectionist, part time
-            philosopher, and coffee geek with over 7 years of experience in
+            <br /> Born in Poland, but found home in Germany. Full-stack web
+            developer with a passion for clever, innovatory, interactive,
+            responsive, and scalable technologies. Young creative eager to take
+            on new challenges, projects, and opportunities. Perfectionist, part
+            time philosopher, and coffee geek with over 7 years of experience in
             specialty coffee industry as a barista, trainer, manager and a
             competitor.
           </p>

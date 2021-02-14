@@ -1,10 +1,16 @@
 import React from "react";
+import SingleSkill from "./SingleSkill";
 import Fade from "react-reveal/Fade";
 import Slide from "react-reveal/Slide";
 import Reveal from "react-reveal/Reveal";
+import { skills } from "../scripts/skills";
 import "../styles/Skills.css";
 
 export default function Skills() {
+  const mappedSkills = skills.map((skill) => (
+    <SingleSkill name={skill[0]} percentage={skill[1]} delay={skill[2]} />
+  ));
+
   return (
     <div className="skills">
       <Fade left duration={1200} delay={100} fraction={0.8}>
@@ -13,7 +19,8 @@ export default function Skills() {
       <div className="skillsRectangle">
         <div className="skillsContainer skillsGrid">
           <Slide left big duration={1000} fraction={0.8}>
-            <div className="skill">
+            {mappedSkills}
+            {/* <div className="skill">
               <h5>HTML</h5>
               <p>90%</p>
               <Reveal effect="grow90" delay={1100}>
@@ -75,7 +82,7 @@ export default function Skills() {
               <Reveal effect="grow60" delay={1750}>
                 <div className="rectangle"></div>
               </Reveal>
-            </div>
+            </div> */}
           </Slide>
         </div>
       </div>

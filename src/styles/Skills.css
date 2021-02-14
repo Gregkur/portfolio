@@ -7,7 +7,6 @@
   background: rgb(245, 245, 245);
 }
 .skillsTitle {
-  /* margin-top: 3rem; */
   width: 250px;
   border-bottom: 1px solid #f1d302;
   font-size: 36px;
@@ -16,58 +15,18 @@
   letter-spacing: 0.001em;
 }
 .skillsRectangle {
-  /* margin-top: 17rem; */
   display: flex;
   flex-direction: column;
-  /* flex-wrap: wrap; */
   align-items: center;
   justify-content: space-evenly;
-  /* justify-content: left; */
   width: 100%;
   height: 90%;
-  /* background: #0e1c36; */
-  /* background: transparent;*/
-  /* display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 10rem 0px;
-  grid-template-areas:
-    "."
-    "."; */
+
 }
 
 .singleSkill {
-  /* display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-  color: white;
-  background: #f1d302;
-  border-radius: 20% */
-
-  /* position: absolute;
-  display: inline-block; */
-  /* margin-right: 1rem;
-  margin-bottom: 1rem;
-  padding-top: 0.5rem;
-  padding-right: 1.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 1.5rem; */
-  /* background-color: white; */
-  /* color: transparent;
-  font-weight: 500;
-  font-size: 3rem; */
-  /* position: absolute;
-  display: inline-block; */
-  /* background-color: white; */
-  /* color: transparent;
-  text-transform: uppercase;
-  -webkit-text-stroke: #081123 1.5px;
-  font-weight: 700;
-  font-size: 3.7rem; */
   padding-left: 1rem;
   padding-right: 1rem;
-  /* background-color: white; */
   position: absolute;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -88,7 +47,6 @@
   width: 47%;
   align-items: center;
   display: flex;
-  /* flex-wrap: wrap; */
   flex-direction: column;
 }
 
@@ -97,7 +55,7 @@
   align-items: center;
   display: flex;
   justify-items: center;
-  width: 100%;
+  width: 750px;
   background: #e0e0e0;
 }
 .skill > p {
@@ -114,10 +72,6 @@
   justify-content: center;
   width: 7rem;
   margin: 0px;
-  /* padding: 10px 10px 10px 10px; */
-  /* padding-right: 10px; */
-  /* text-align: center; */
-  /* padding: 7px; */
   height: 2rem;
   display: flex;
   font-size: 16px;
