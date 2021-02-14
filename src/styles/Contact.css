@@ -15,8 +15,17 @@
   letter-spacing: 0.001em;
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 650px) {
-  .contact > .contactFormContainer{
+  .contact > .contactFormContainer {
     width: 100%;
+  }
+  .snackbar {
+    height: 100vh !important;
+    border: none !important;
+    position: absolute;
+    left: 0 !important;
+    bottom: 0 !important;
+    z-index: 20000;
+    width: 100vw !important;
   }
 }
 @media only screen and (min-width: 1824px) {
