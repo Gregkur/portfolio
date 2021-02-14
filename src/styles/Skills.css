@@ -117,6 +117,27 @@
     }
   }
 }
+@media only screen and (min-width: 1824px) {
+  .skillsTitle {
+    font-size: 5rem;
+    border-bottom: 3px solid #f1d302;
+    line-height: 5rem;
+  }
+  .rectangle {
+    height: 4rem;
+  }
+  .skill{
+    width:50rem;
+  }
+  .skill > h5 {
+    font-size: 1.5rem;
+    height: 4rem;
+    width: 10rem;
+  }
+  .skill > p {
+    font-size: 1.3rem;
+  }
+}
 /* Animations */
 .grow90 {
   animation-name: grow90;

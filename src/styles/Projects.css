@@ -48,6 +48,12 @@
     border: 2px #f1d301 solid;
   }
 }
+@media only screen and (min-width: 1824px) {
+  .projectsTitle {
+    font-size: 5rem;
+    line-height: 6rem;
+  }
+}
 .project {
   height: 100%;
   background-size: cover;

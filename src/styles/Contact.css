@@ -19,6 +19,13 @@
     width: 100%;
   }
 }
+@media only screen and (min-width: 1824px) {
+  .contactTitle {
+    font-size: 5rem;
+    border-bottom: 3px solid #f1d302;
+    line-height: 5rem;
+  }
+}
 .contactFormContainer {
   position: absolute;
   bottom: 15rem;
