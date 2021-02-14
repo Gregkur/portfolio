@@ -14,7 +14,6 @@
   box-shadow: 0 10px 6px -6px #777;
   animation-fill-mode: none !important;
 }
-
 .mIcon {
   font-size: 2rem;
   color: #738dc5;
@@ -54,18 +53,19 @@
   height: 100%;
 }
 aside {
+  height:32%;
   width: 90%;
+  margin-top: 1rem;
 }
 aside > p {
   font-weight: 200;
   margin-top: auto;
 }
 .modalWrapper > header > h1 {
-  font-size: 1.5rem;
-  line-height: 22px;
+  margin-top: 30px;
+  font-size: 25px;
+  line-height: 13px;
   color: #0e1c36;
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
 }
 .blackout {
   position: absolute;

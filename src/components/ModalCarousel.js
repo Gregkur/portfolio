@@ -12,6 +12,7 @@ const Container = styled.div`
   position: relative;
   overflow: hidden;
   width: ${width};
+  height: 65%;
 `;
 const Children = styled.div`
   width: ${width};
