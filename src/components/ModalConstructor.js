@@ -10,7 +10,7 @@ const ModalConductor = (props) => {
     case "PORTFOLIO":
       return (
         <PortfolioModal
-          website="https://shadr.herokuapp.com/"
+          website="https://www.gregk.dev/"
           github="https://github.com/Gregkur/portfolio"
           {...props}
         />

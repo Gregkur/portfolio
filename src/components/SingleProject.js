@@ -17,7 +17,7 @@ export default function SingleProject(props) {
   const handleClick = (e) => {
     changeModal(modal);
   };
-
+  
   return (
     <div
       onMouseOver={handleEnter}
