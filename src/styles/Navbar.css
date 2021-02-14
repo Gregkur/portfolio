@@ -10,6 +10,15 @@
   transition: 0.3s;
   z-index: 50;
 }
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .nav > .menuContainer {
+    margin-right: 0;
+  }
+  .menuContainer > .menuItem {
+    margin-right: 0.8rem;
+    font-size: 0.9rem;
+  }
+}
 
 .sticky {
   position: fixed;

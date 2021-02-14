@@ -26,6 +26,28 @@
   grid-column-gap: 0rem;
   grid-row-gap: 0rem;
 }
+/* Smartphones */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .grid-container {
+    height: 85%;
+    width: 60%;
+    margin-bottom: 4rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0rem;
+    grid-row-gap: 0rem;
+  }
+  .infoContainerText {
+    display: none !important;
+  }
+  .infoContainer > .buttonGold {
+    background-color: #f1d301;
+    cursor: pointer;
+    color: #ffff;
+    border: 2px #f1d301 solid;
+  }
+}
 .project {
   height: 100%;
   background-size: cover;

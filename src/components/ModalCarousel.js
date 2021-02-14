@@ -6,12 +6,15 @@ import Slide from "react-reveal/Slide";
 import styled from "styled-components";
 
 const width = "100%",
-  height = "19rem";
+  height = "19rem",
+  smartphone = window.matchMedia(
+    "(min-device-width: 320px) and (max-device-width: 480px)"
+  );
 const Container = styled.div`
   position: relative;
   overflow: hidden;
   width: ${width};
-  height: 65%;
+  height: ${smartphone ? "45%" : "65%"};
 `;
 const Children = styled.div`
   width: ${width};
