@@ -80,3 +80,35 @@
   max-width: 88%;
   text-align: center;
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .iconContainer {
+    margin-top: 0;
+    width: 94%;
+  }
+  .icon {
+    font-size: 2.5rem !important;
+    width: 2.5rem !important;
+    padding: 17px;
+  }
+  .iconText > h4 {
+    font-weight: 600;
+    font-size: 10px;
+  }
+  .iconText > p {
+    font-size: 10px;
+    margin-top: -7px;
+  }
+  .aboutContainer {
+    margin-top: 0;
+    flex-direction: column;
+  }
+  .aboutContainer > .profilePhoto {
+    width: 200px;
+    height: 200px;
+  }
+  .aboutText {
+    width: 145%;
+    font-size: 12px;
+  }
+}
