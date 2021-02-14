@@ -1,7 +1,5 @@
 import React from "react";
 
-import { styled, keyframes } from "styled-components";
-
 import Reveal from "react-reveal/Reveal";
 
 const smartphone = window.matchMedia(
@@ -15,7 +13,6 @@ export default function SingleSkill(props) {
     <div className="skill">
       <h5>{name}</h5>
       <p>{percentage}</p>
-      {console.log(smartphone)}
       <Reveal
         effect={
           smartphone.matches

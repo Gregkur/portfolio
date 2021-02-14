@@ -112,3 +112,31 @@
     font-size: 12px;
   }
 }
+@media only screen and (min-width: 1824px) {
+  .aboutTitle {
+    font-size: 5rem;
+    border-bottom: 3px solid #f1d302;
+    line-height: 5rem;
+  }
+  .icon {
+    font-size: 5rem !important;
+    width: 5rem !important;
+    padding: 3rem;
+  }
+  .iconText > h4 {
+    font-size: 3.8rem;
+  }
+  .iconText > p {
+    font-size: 1.7rem;
+    margin-top: -4rem;
+  }
+  .aboutText {
+    width: 50%;
+    font-size: 2rem;
+    line-height: unset;
+  }
+  .aboutContainer > .profilePhoto {
+    width: 25rem;
+    height: 25rem;
+  }
+}
