@@ -1,7 +1,10 @@
 import { React, useState } from "react";
+
 import SingleProject from "./SingleProject";
 import ModalConductor from "./ModalConstructor";
+
 import Fade from "react-reveal/Fade";
+
 import "../styles/Projects.css";
 
 export default function Projects() {

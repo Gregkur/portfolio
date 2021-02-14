@@ -1,5 +1,5 @@
 import { React, useState, useEffect } from "react";
-import "./App.css";
+
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import About from "./components/About";
@@ -7,8 +7,11 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Loader from "./components/Loader";
+
 import Particles from "react-particles-js";
+
 import { particleParams } from "./scripts/particles";
+import "./App.css";
 
 function App() {
   const [loading, setLoading] = useState(true);

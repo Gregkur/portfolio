@@ -1,14 +1,21 @@
 import React from "react";
+
 import SingleSkill from "./SingleSkill";
+
 import Fade from "react-reveal/Fade";
 import Slide from "react-reveal/Slide";
-import Reveal from "react-reveal/Reveal";
+
 import { skills } from "../scripts/skills";
 import "../styles/Skills.css";
 
 export default function Skills() {
   const mappedSkills = skills.map((skill) => (
-    <SingleSkill name={skill[0]} percentage={skill[1]} delay={skill[2]} />
+    <SingleSkill
+      key={skill[0]}
+      name={skill[0]}
+      percentage={skill[1]}
+      delay={skill[2]}
+    />
   ));
 
   return (
@@ -20,69 +27,6 @@ export default function Skills() {
         <div className="skillsContainer skillsGrid">
           <Slide left big duration={1000} fraction={0.8}>
             {mappedSkills}
-            {/* <div className="skill">
-              <h5>HTML</h5>
-              <p>90%</p>
-              <Reveal effect="grow90" delay={1100}>
-                <div className="rectangle "></div>
-              </Reveal>
-            </div>
-            <div className="skill">
-              <h5>CSS</h5>
-              <p>90%</p>
-              <Reveal effect="grow90" delay={1200}>
-                <div className="rectangle "></div>
-              </Reveal>
-            </div>
-            <div className="skill">
-              <h5>JavaScript</h5>
-              <p>70%</p>
-              <Reveal effect="grow70" delay={1300}>
-                <div className="rectangle "></div>
-              </Reveal>
-            </div>
-            <div className="skill">
-              <h5>React</h5>
-              <p>60%</p>
-              <Reveal effect="grow60" delay={1400}>
-                <div className="rectangle"></div>
-              </Reveal>
-            </div>
-            <div className="skill">
-              <h5>Ruby/Rails</h5>
-              <p>60%</p>
-              <Reveal effect="grow60" delay={1500}>
-                <div className="rectangle"></div>
-              </Reveal>
-            </div>
-            <div className="skill">
-              <h5>SQL</h5>
-              <p>40%</p>
-              <Reveal effect="grow40" delay={1600}>
-                <div className="rectangle"></div>
-              </Reveal>
-            </div>
-            <div className="skill">
-              <h5>NodeJS</h5>
-              <p>30%</p>
-              <Reveal effect="grow30" delay={1700}>
-                <div className="rectangle"></div>
-              </Reveal>
-            </div>
-            <div className="skill">
-              <h5>Figma</h5>
-              <p>50%</p>
-              <Reveal effect="grow50" delay={1720}>
-                <div className="rectangle"></div>
-              </Reveal>
-            </div>
-            <div className="skill">
-              <h5>NextJS</h5>
-              <p>40%</p>
-              <Reveal effect="grow60" delay={1750}>
-                <div className="rectangle"></div>
-              </Reveal>
-            </div> */}
           </Slide>
         </div>
       </div>

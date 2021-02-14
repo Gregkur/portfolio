@@ -1,4 +1,5 @@
 import { React, useState } from "react";
+
 import Fade from "react-reveal/Fade";
 
 export default function SingleProject(props) {
@@ -7,15 +8,16 @@ export default function SingleProject(props) {
 
   const handleEnter = (e) => {
     setHideInfo("");
-    // console.log(e.target.firstChild);
-    // e.target.firstChild.classList.add("slideDown");
   };
+
   const handleLeave = (e) => {
     setHideInfo("hide");
   };
+
   const handleClick = (e) => {
     changeModal(modal);
   };
+
   return (
     <div
       onMouseOver={handleEnter}

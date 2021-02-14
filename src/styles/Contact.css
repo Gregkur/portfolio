@@ -6,9 +6,7 @@
   background: transparent;
   position: relative;
 }
-
 .contactTitle {
-  /* margin-top: 3rem; */
   color: white;
   width: 250px;
   border-bottom: 1px solid #f1d302;
@@ -16,8 +14,8 @@
   line-height: 39px;
   letter-spacing: 0.001em;
 }
+
 .contactFormContainer {
-  /* background: white; */
   position: absolute;
   bottom: 15rem;
   height: 45%;
@@ -64,7 +62,6 @@ form {
 .contactForm > button {
   position: absolute;
   bottom: -2rem;
-  /* margin-right: 34%; */
   width: 10rem;
   background: transparent;
   height: 2em;
@@ -84,6 +81,7 @@ form {
 .contactForm > button:focus {
   outline: none;
 }
+
 .contactTextContainer {
   display: flex;
   position: absolute;
@@ -109,6 +107,7 @@ form {
   position: absolute;
   bottom: 0;
 }
+
 .snackbar {
   display: flex;
   height: 28vh;

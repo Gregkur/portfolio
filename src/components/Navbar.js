@@ -1,14 +1,15 @@
 import { React, Component } from "react";
-import { Link } from "react-scroll";
-import Pdf from "../documents/cv.pdf";
 
+import { Link } from "react-scroll";
+
+import Pdf from "../documents/cv.pdf";
 import "../styles/Navbar.css";
 
 export default class Navbar extends Component {
-  // TODO MOVE IT TO A HOOK
   state = {
     nav: false,
   };
+
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll);
     const navbar = document.querySelector(".nav");

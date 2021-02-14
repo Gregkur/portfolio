@@ -1,4 +1,5 @@
 import React from "react";
+
 import emailjs from "emailjs-com";
 
 export default function ContactUs(props) {
@@ -26,7 +27,6 @@ export default function ContactUs(props) {
 
   return (
     <form className="contactForm" onSubmit={sendEmail}>
-      {console.log(props)}
       <input type="text" name="user_name" placeholder="Name" />
       <input type="email" name="user_email" placeholder="Email" />
       <textarea name="message" placeholder="Message" />

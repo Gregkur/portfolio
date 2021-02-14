@@ -87,7 +87,5 @@
   outline: none;
 }
 .hide {
-  /* visibility: hidden; */
   display: none;
-  /* opacity: 0 !important; */
 }

@@ -1,4 +1,5 @@
 import React from "react";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLinkedin,
@@ -8,7 +9,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import "../styles/Footer.css";
 import { faChevronCircleUp } from "@fortawesome/free-solid-svg-icons";
-import {  animateScroll as scroll } from "react-scroll";
+import { animateScroll as scroll } from "react-scroll";
 
 export default function Footer() {
   const scrollToTop = () => {

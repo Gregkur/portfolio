@@ -1,10 +1,12 @@
 import React from "react";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPalette } from "@fortawesome/free-solid-svg-icons";
 import { faPeopleCarry } from "@fortawesome/free-solid-svg-icons";
 import { faBookReader } from "@fortawesome/free-solid-svg-icons";
 import Fade from "react-reveal/Fade";
 import Flip from "react-reveal/Flip";
+
 import "../styles/About.css";
 
 export default function About() {

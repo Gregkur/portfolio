@@ -1,6 +1,8 @@
 import React from "react";
+
 import makeCarousel from "react-reveal/makeCarousel";
 import Slide from "react-reveal/Slide";
+
 import styled from "styled-components";
 
 const width = "100%",
