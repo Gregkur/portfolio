@@ -40,8 +40,8 @@ export default function About() {
             <FontAwesomeIcon className="icon Book" icon={faBookReader} />
             <h4>Rapid learner</h4>
             <p>
-              Having a capability of quickly understanding information, processing it, and
-              applying it in practice.
+              Having a capability of quickly understanding information,
+              processing it, and applying it in practice.
             </p>
           </div>
         </Flip>
@@ -49,13 +49,13 @@ export default function About() {
       <div className="aboutContainer">
         <Fade left duration={1200} fraction={0.8}>
           <p className="aboutText">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-            justo orci, sollicitudin iaculis dignissim at, lacinia vel tellus.
-            Nam ac ex bibendum, pulvinar ligula at, tempor sem. Phasellus a
-            ullamcorper mauris. Pellentesque eu scelerisque libero. Nunc ac
-            lectus hendrerit, vehicula ipsum ac, tristique est. Phasellus tempor
-            enim fringilla convallis hendrerit. Cras lorem leo, pretium in
-            fermentum ac, ullamcorper eget ipsum.
+            My name is Grzegorz, but please, call me Greg.
+            <br /> Born in Poland, but found home in Germany. Alumni of Le Wagon
+            web development weeks Bootcamp. Young creative eager to take on new
+            challenges, projects, and opportunities. Perfectionist, part time
+            philosopher, and coffee geek with over 7 years of experience in
+            specialty coffee industry as a barista, trainer, manager and a
+            competitor.
           </p>
         </Fade>
         <Fade right duration={1200} fraction={0.6}>
