@@ -8,7 +8,7 @@ import styled from "styled-components";
 const width = "100%",
   height = "19rem",
   smartphone = window.matchMedia(
-    "(min-device-width: 320px) and (max-device-width: 480px)"
+    "(min-device-width: 320px) and (max-device-width: 650px)"
   );
 const Container = styled.div`
   position: relative;

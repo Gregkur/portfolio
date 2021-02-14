@@ -99,7 +99,24 @@
   -moz-box-shadow: 0 10px 6px -6px #777;
   box-shadow: 0 10px 6px -6px #777;
 }
-
+/* width: 58.5%; */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .skill {
+    width: 100%;
+  }
+  .skillsContainer {
+    width: 95%;
+    align-items: unset;
+  }
+  @keyframes grow90 {
+    0% {
+      width: 0% !important;
+    }
+    100% {
+      width: 58.5% !important;
+    }
+  }
+}
 /* Animations */
 .grow90 {
   animation-name: grow90;
@@ -109,7 +126,7 @@
 }
 @keyframes grow90 {
   0% {
-    width: 0rem;
+    width: 0%;
   }
   100% {
     width: 31.5rem;
@@ -123,7 +140,7 @@
 }
 @keyframes grow70 {
   0% {
-    width: 0rem;
+    width: 0%;
   }
   100% {
     width: 24.5rem;
@@ -137,7 +154,7 @@
 }
 @keyframes grow60 {
   0% {
-    width: 0rem;
+    width: 0%;
   }
   100% {
     width: 21rem;
@@ -151,7 +168,7 @@
 }
 @keyframes grow30 {
   0% {
-    width: 0rem;
+    width: 0%;
   }
   100% {
     width: 10.2rem;
@@ -165,7 +182,7 @@
 }
 @keyframes grow40 {
   0% {
-    width: 0rem;
+    width: 0%;
   }
   100% {
     width: 14rem;
@@ -179,9 +196,95 @@
 }
 @keyframes grow50 {
   0% {
-    width: 0rem;
+    width: 0%;
   }
   100% {
     width: 17rem;
+  }
+}
+
+/* Smartphone animations */
+.smartphoneGrow90 {
+  animation-name: smartphoneGrow90;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes smartphoneGrow90 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 54vw;
+  }
+}
+.smartphoneGrow70 {
+  animation-name: smartphoneGrow70;
+  animation-duration: 3s;
+  animation-delay: 3.2s;
+  animation-fill-mode: forwards;
+}
+@keyframes smartphoneGrow70 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 43vw;
+  }
+}
+.smartphoneGrow60 {
+  animation-name: smartphoneGrow60;
+  animation-duration: 3s;
+  animation-delay: 3.4s;
+  animation-fill-mode: forwards;
+}
+@keyframes smartphoneGrow60 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 38vw;
+  }
+}
+.smartphoneGrow30 {
+  animation-name: smartphoneGrow30;
+  animation-duration: 3s;
+  animation-delay: 3.1s;
+  animation-fill-mode: forwards;
+}
+@keyframes smartphoneGrow30 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 25vw;
+  }
+}
+.smartphoneGrow40 {
+  animation-name: smartphoneGrow40;
+  animation-duration: 3s;
+  animation-delay: 3.2s;
+  animation-fill-mode: forwards;
+}
+@keyframes smartphoneGrow40 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 30vw;
+  }
+}
+.smartphoneGrow50 {
+  animation-name: smartphoneGrow50;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes smartphoneGrow50 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 34vw;
   }
 }

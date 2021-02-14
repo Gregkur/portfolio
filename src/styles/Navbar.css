@@ -10,7 +10,7 @@
   transition: 0.3s;
   z-index: 50;
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 650px) {
   .nav > .menuContainer {
     margin-right: 0;
   }
