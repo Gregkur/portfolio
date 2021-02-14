@@ -19,18 +19,18 @@ export default function About() {
             <FontAwesomeIcon className="icon Palette" icon={faPalette} />
             <h4>Creative mind</h4>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod
+              Creating solutions to problems through creative expression,
+              innovation and starting ideas to make a change.{" "}
             </p>
           </div>
         </Flip>
         <Flip left duration={1200} fraction={0.8} delay={450}>
           <div className="iconText">
             <FontAwesomeIcon className="icon People" icon={faPeopleCarry} />
-            <h4>Team worker</h4>
+            <h4>Team player</h4>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod
+              Understanding your role in the bigger scheme of things, embracing
+              collaboration, communication, accountability, and dependability.
             </p>
           </div>
         </Flip>
@@ -40,8 +40,8 @@ export default function About() {
             <FontAwesomeIcon className="icon Book" icon={faBookReader} />
             <h4>Rapid learner</h4>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod
+              Having a capability of quickly understanding information, processing it, and
+              applying it in practice.
             </p>
           </div>
         </Flip>
