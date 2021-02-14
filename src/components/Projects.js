@@ -40,7 +40,7 @@ export default function Projects() {
           <SingleProject
             title="Portfolio"
             stack="ReactJS"
-            photo="portfolio.png"
+            photo="gregk.png"
             modal="PORTFOLIO"
             changeModal={changeModal}
           />
