@@ -1,11 +1,8 @@
 import React from "react";
 import makeCarousel from "react-reveal/makeCarousel";
-// we'll need the Slide component for sliding animations
-// but you can use any other effect
 import Slide from "react-reveal/Slide";
-// we'll use styled components for this tutorial
-// but you can use any other styling options ( like plain old css )
-import styled, { css } from "styled-components";
+import styled from "styled-components";
+
 const width = "100%",
   height = "19rem";
 const Container = styled.div`
