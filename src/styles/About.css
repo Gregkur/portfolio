@@ -104,8 +104,8 @@
     flex-direction: column;
   }
   .aboutContainer > .profilePhoto {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
   }
   .aboutText {
     width: 145%;
