@@ -58,7 +58,8 @@ export default function About() {
             on new challenges, projects, and opportunities. Perfectionist, part
             time philosopher, and coffee geek with over 7 years of experience in
             specialty coffee industry as a barista, trainer, manager and a
-            competitor.
+            competitor. <br />
+            And yes, I really like the color yellow
           </p>
         </Fade>
         <Fade right duration={1200} fraction={0.6}>
