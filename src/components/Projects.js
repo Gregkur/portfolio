@@ -25,7 +25,7 @@ export default function Projects() {
 
   const isBlackout = currentModal !== "";
   return (
-    <div className="projects">
+    <section className="projects">
       <ModalConductor
         currentModal={currentModal}
         hideModal={hideModal}
@@ -73,6 +73,6 @@ export default function Projects() {
           />
         </Fade>
       </div>
-    </div>
+    </section>
   );
 }

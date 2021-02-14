@@ -20,7 +20,7 @@ export default function Contact() {
   return (
     <>
       {snackbarShowing && <Snackbar />}
-      <div className="contact">
+      <section className="contact">
         <Fade left duration={1200} delay={200}>
           <h1 className="contactTitle">CONTACT</h1>
         </Fade>
@@ -34,7 +34,7 @@ export default function Contact() {
           </div>
         </Fade>
         <Footer />
-      </div>
+      </section>
     </>
   );
 }

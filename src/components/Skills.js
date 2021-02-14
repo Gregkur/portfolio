@@ -19,7 +19,7 @@ export default function Skills() {
   ));
 
   return (
-    <div className="skills">
+    <section className="skills">
       <Fade left duration={1200} delay={100} fraction={0.8}>
         <h1 className="skillsTitle">SKILLS</h1>
       </Fade>
@@ -30,6 +30,6 @@ export default function Skills() {
           </Slide>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

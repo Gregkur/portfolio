@@ -11,7 +11,7 @@ import "../styles/About.css";
 
 export default function About() {
   return (
-    <div name="content" className="about content">
+    <section name="content" className="about content">
       <Fade left duration={1200} delay={200}>
         <h1 className="aboutTitle">ABOUT</h1>
       </Fade>
@@ -70,6 +70,6 @@ export default function About() {
           />
         </Fade>
       </div>
-    </div>
+    </section>
   );
 }
