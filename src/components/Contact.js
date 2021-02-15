@@ -25,11 +25,11 @@ export default function Contact() {
           <h1 className="contactTitle">CONTACT</h1>
         </Fade>
         <Fade bottom duration={1200} fraction={0.8}>
-          <div className="contactTextContainer">
-            <h2>Wanna be friends...</h2>
-            <h3>...or colleagues?</h3>
-          </div>
           <div className="contactFormContainer">
+            <div className="contactTextContainer">
+              <h2>Wanna be friends...</h2>
+              <h3>...or colleagues?</h3>
+            </div>
             <ContactForm showSnackbar={makeSnackbarAppear} />
           </div>
         </Fade>
