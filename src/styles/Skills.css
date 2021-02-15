@@ -104,6 +104,9 @@
   .skill {
     width: 100%;
   }
+  .skill > p {
+    margin-bottom: 20px;
+  }
   .skillsContainer {
     width: 95%;
     align-items: unset;
@@ -126,8 +129,8 @@
   .rectangle {
     height: 4rem;
   }
-  .skill{
-    width:50rem;
+  .skill {
+    width: 50rem;
   }
   .skill > h5 {
     font-size: 1.5rem;

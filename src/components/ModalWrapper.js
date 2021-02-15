@@ -15,10 +15,12 @@ const ModalWrapper = (props) => {
     <Zoom duration={600}>
       <div className="modalWrapper">
         <ModalCarousel {...props} />
-        <header>
-          <h1>{title}</h1>
-        </header>
-        <aside>{children}</aside>
+        <section className="modalTextContainer">
+          <header>
+            <h1>{title}</h1>
+          </header>
+          <aside>{children}</aside>
+        </section>
         <div className="buttonContainer">
           <FontAwesomeIcon
             className="mIcon close"

@@ -16,7 +16,7 @@ export default function About() {
         <h1 className="aboutTitle">ABOUT</h1>
       </Fade>
       <div className="iconContainer">
-        <Flip left duration={1200} fraction={0.8} delay={300}>
+        <Fade  duration={1200} fraction={0.8} delay={300}>
           <div className="iconText">
             <FontAwesomeIcon className="icon Palette" icon={faPalette} />
             <h4>Creative mind</h4>
@@ -25,8 +25,8 @@ export default function About() {
               innovation and starting ideas to make a change.{" "}
             </p>
           </div>
-        </Flip>
-        <Flip left duration={1200} fraction={0.8} delay={450}>
+        </Fade>
+        <Fade  duration={1200} fraction={0.8} delay={450}>
           <div className="iconText">
             <FontAwesomeIcon className="icon People" icon={faPeopleCarry} />
             <h4>Team player</h4>
@@ -35,9 +35,9 @@ export default function About() {
               collaboration, communication, accountability, and dependability.
             </p>
           </div>
-        </Flip>
+        </Fade>
 
-        <Flip left duration={1200} fraction={0.8} delay={550}>
+        <Fade duration={1200} fraction={0.8} delay={550}>
           <div className="iconText">
             <FontAwesomeIcon className="icon Book" icon={faBookReader} />
             <h4>Rapid learner</h4>
@@ -46,7 +46,7 @@ export default function About() {
               processing it, and applying it in practice.
             </p>
           </div>
-        </Flip>
+        </Fade>
       </div>
       <div className="aboutContainer">
         <Fade left duration={1200} fraction={0.8}>
