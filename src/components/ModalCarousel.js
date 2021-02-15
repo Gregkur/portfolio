@@ -14,7 +14,7 @@ const Container = styled.div`
   position: relative;
   overflow: hidden;
   width: ${width};
-  height: ${smartphone ? "45%" : "65%"};
+  height: ${smartphone.matches ? "45%" : "45%"};
 `;
 const Children = styled.div`
   width: ${width};

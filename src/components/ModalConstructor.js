@@ -19,7 +19,7 @@ const ModalConductor = (props) => {
     case "ART":
       return (
         <ArtSpaceModal
-          website="http://www.artspace490.herokuapp.com/"
+          website="https://artspace490.herokuapp.com/"
           github="https://github.com/Gregkur/artspace"
           {...props}
         />
@@ -37,7 +37,7 @@ const ModalConductor = (props) => {
     case "SOCIAL":
       return (
         <SocialModal
-          website="https://www.socialbookclub.online/"
+          website="https://socialbookclub.herokuapp.com/"
           github="https://github.com/Gregkur/social_book_club"
           {...props}
         />
