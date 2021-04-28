@@ -36,12 +36,12 @@ export default function Projects() {
         <h1 className="projectsTitle">PROJECTS</h1>
       </Fade>
       <div className="grid-container">
-      <Fade bottom duration={1000} fraction={0.5} delay={600}>
+        <Fade bottom duration={1000} fraction={0.5} delay={600}>
           <SingleProject
             title="Yance sports"
             stack="Rails/React/ContextAPI/TypeScript"
             photo="yance.png"
-            modal="YANCE"
+            modal="YANCESPORTS"
             changeModal={changeModal}
           />
         </Fade>
@@ -50,7 +50,7 @@ export default function Projects() {
             title="Devbook"
             stack="MongoDB/Express/React/Redux/NodeJS"
             photo="devbook.png"
-            modal="DEV"
+            modal="DEVBOOK"
             changeModal={changeModal}
           />
         </Fade>
@@ -90,7 +90,6 @@ export default function Projects() {
             changeModal={changeModal}
           />
         </Fade>
-  
       </div>
     </section>
   );

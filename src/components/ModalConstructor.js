@@ -44,7 +44,7 @@ const ModalConductor = (props) => {
           {...props}
         />
       );
-    case "DEV":
+    case "DEVBOOK":
       return (
         <DevbookModal
           website="https://pure-bastion-79183.herokuapp.com/"
@@ -52,7 +52,7 @@ const ModalConductor = (props) => {
           {...props}
         />
       );
-    case "YANCE":
+    case "YANCESPORTS":
       return (
         <YanceModal
           website="https://www.yancesports.com/"
