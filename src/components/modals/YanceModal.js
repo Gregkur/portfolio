@@ -6,12 +6,11 @@ const Shadr = (props) => {
   return (
     <ModalWrapper {...props} title="Yance" width={500} showOk={false}>
       <p>
-        Responsive web app made using <b>ReactJS</b> with <b>Hooks</b>,{" "}
-        <b>React Router</b>, <b>Material UI</b>, and <b>JSS</b>. With the use of
-        higher-order components, state management, and unidirectional data flow.
-        A good exercise in dynamically assigning data and displaying it properly
-        (for example, font color changes dynamically depending on the the
-        relative brightness of the background).
+        Yance is an online platform for live fitness sessions with independent
+        trainers. Prototype created using <b>Ruby on Rails</b>. I lead the team
+        of developers working on a technology change to <b>ReactJS</b> with{" "}
+        <b>ContextAPI</b>, <b>Hooks</b>, full <b>internationalization</b> and{" "}
+        <b>TypeScript</b>.
       </p>
     </ModalWrapper>
   );

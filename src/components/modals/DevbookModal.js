@@ -6,12 +6,10 @@ const Shadr = (props) => {
   return (
     <ModalWrapper {...props} title="Devbook" width={500} showOk={false}>
       <p>
-        Responsive web app made using <b>ReactJS</b> with <b>Hooks</b>,{" "}
-        <b>React Router</b>, <b>Material UI</b>, and <b>JSS</b>. With the use of
-        higher-order components, state management, and unidirectional data flow.
-        A good exercise in dynamically assigning data and displaying it properly
-        (for example, font color changes dynamically depending on the the
-        relative brightness of the background).
+        Prototype of an online social platform to connect Developers. Full-stack
+        project created in <b>ReactJS</b>, with <b>Hooks</b> and <b>Redux</b>.
+        Backend created in <b>NodeJS</b> with <b>Express</b> and <b>MongoDB</b>.
+        With custom reducers, and secure api calls.
       </p>
     </ModalWrapper>
   );
