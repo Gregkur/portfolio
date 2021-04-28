@@ -36,7 +36,25 @@ export default function Projects() {
         <h1 className="projectsTitle">PROJECTS</h1>
       </Fade>
       <div className="grid-container">
-        <Fade bottom duration={1200} fraction={0.8}>
+      <Fade bottom duration={1000} fraction={0.5} delay={600}>
+          <SingleProject
+            title="Yance sports"
+            stack="Rails/React/ContextAPI/TypeScript"
+            photo="yance.png"
+            modal="YANCE"
+            changeModal={changeModal}
+          />
+        </Fade>
+        <Fade bottom duration={1000} fraction={0.5} delay={300}>
+          <SingleProject
+            title="Devbook"
+            stack="MongoDB/Express/React/Redux/NodeJS"
+            photo="devbook.png"
+            modal="DEV"
+            changeModal={changeModal}
+          />
+        </Fade>
+        <Fade bottom duration={1200} fraction={0.8} delay={400}>
           <SingleProject
             title="Portfolio"
             stack="ReactJS"
@@ -45,7 +63,7 @@ export default function Projects() {
             changeModal={changeModal}
           />
         </Fade>
-        <Fade bottom duration={1200} fraction={0.8} delay={300}>
+        <Fade bottom duration={1200} fraction={0.8} delay={500}>
           <SingleProject
             title="Shadr"
             stack="ReactJS/Router/NextJS"
@@ -54,7 +72,7 @@ export default function Projects() {
             changeModal={changeModal}
           />
         </Fade>
-        <Fade bottom duration={1000} fraction={0.5} delay={400}>
+        <Fade bottom duration={1000} fraction={0.5} delay={600}>
           <SingleProject
             title="Social Book Club"
             stack="Ruby/Rails/JavaScript"
@@ -63,7 +81,7 @@ export default function Projects() {
             changeModal={changeModal}
           />
         </Fade>
-        <Fade bottom duration={1000} fraction={0.5} delay={500}>
+        <Fade bottom duration={1000} fraction={0.5} delay={700}>
           <SingleProject
             title="Art Space"
             stack="Ruby/Rails"
@@ -72,6 +90,7 @@ export default function Projects() {
             changeModal={changeModal}
           />
         </Fade>
+  
       </div>
     </section>
   );
