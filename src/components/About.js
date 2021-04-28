@@ -16,7 +16,7 @@ export default function About() {
         <h1 className="aboutTitle">ABOUT</h1>
       </Fade>
       <div className="iconContainer">
-        <Fade  duration={1200} fraction={0.8} delay={300}>
+        <Fade duration={1200} fraction={0.8} delay={300}>
           <div className="iconText">
             <FontAwesomeIcon className="icon Palette" icon={faPalette} />
             <h4>Creative mind</h4>
@@ -26,7 +26,7 @@ export default function About() {
             </p>
           </div>
         </Fade>
-        <Fade  duration={1200} fraction={0.8} delay={450}>
+        <Fade duration={1200} fraction={0.8} delay={450}>
           <div className="iconText">
             <FontAwesomeIcon className="icon People" icon={faPeopleCarry} />
             <h4>Team player</h4>
@@ -52,14 +52,16 @@ export default function About() {
         <Fade left duration={1200} fraction={0.8}>
           <p className="aboutText">
             My name is Grzegorz, but please, call me Greg.
-            <br /> Born in Poland, but found home in Germany. Full-stack web
-            developer with a passion for clever, innovatory, interactive,
-            responsive, and scalable technologies. Young creative eager to take
-            on new challenges, projects, and opportunities. Perfectionist, part
-            time philosopher, and coffee geek with over 7 years of experience in
-            specialty coffee industry as a barista, trainer, manager and a
-            competitor. <br />
-            And yes, I really like the color yellow
+            <br />
+            Born in Poland, but found home in Germany. Full-stack web developer
+            with a passion for clever, innovatory, interactive, responsive, and
+            scalable technologies. Young creative eager to take on new
+            challenges, projects, and opportunities. Perfectionist, part-time
+            philosopher, and coffee geek with over 7 years of experience in the
+            speciality coffee industry as a barista, trainer, manager and
+            competitor.
+            <br />
+            And yes, I really like the colour yellow
           </p>
         </Fade>
         <Fade right duration={1200} fraction={0.6}>

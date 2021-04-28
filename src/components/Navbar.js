@@ -2,7 +2,7 @@ import { React, Component } from "react";
 
 import { Link } from "react-scroll";
 
-import Pdf from "../documents/cv.pdf";
+import Pdf from "../documents/resume.pdf";
 import "../styles/Navbar.css";
 
 export default class Navbar extends Component {
