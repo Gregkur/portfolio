@@ -1,9 +1,11 @@
 import React from "react";
 
-import PortfolioModal from "./PortfolioModal.js";
-import ArtSpaceModal from "./ArtSpaceModal.js";
-import ShadrModal from "./ShadrModal.js";
-import SocialModal from "./SocialModal.js";
+import PortfolioModal from "./modals/PortfolioModal.js";
+import ArtSpaceModal from "./modals/ArtSpaceModal.js";
+import ShadrModal from "./modals/ShadrModal.js";
+import SocialModal from "./modals/SocialModal.js";
+import DevbookModal from "./modals/DevbookModal.js";
+import YanceModal from "./modals/YanceModal.js";
 
 const ModalConductor = (props) => {
   switch (props.currentModal) {
@@ -39,6 +41,22 @@ const ModalConductor = (props) => {
         <SocialModal
           website="https://socialbookclub.herokuapp.com/"
           github="https://github.com/Gregkur/social_book_club"
+          {...props}
+        />
+      );
+    case "DEV":
+      return (
+        <DevbookModal
+          website="https://pure-bastion-79183.herokuapp.com/"
+          github="https://github.com/Gregkur/devbook"
+          {...props}
+        />
+      );
+    case "YANCE":
+      return (
+        <YanceModal
+          website="https://www.yancesports.com/"
+          github="https://www.yancesports.com/"
           {...props}
         />
       );
